@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, Flex, HStack, VStack } from "@chakra-ui/react";
+import { VStack } from "@chakra-ui/react";
 import Carte from "..";
 
 type Props = {};

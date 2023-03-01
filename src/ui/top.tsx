@@ -1,5 +1,5 @@
 import React from "react";
-import Loupe from "../icons/loupe";
+import Loupe from "./icons/loupe";
 import { Text, Flex, Input, Button, Box, Spacer } from "@chakra-ui/react";
 type Props = {};
 

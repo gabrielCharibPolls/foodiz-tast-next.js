@@ -1,10 +1,10 @@
 import React from "react";
-import Fleche from "../icons/loupe";
+import Fleche from "./icons/loupe";
 import { Text, Flex, HStack } from "@chakra-ui/react";
-import Flechegauche from "../icons/fleche-gauche";
-import ButtonDeleteCompanie from "../icons/buttonDeleteCompany";
-import ButtonAdd from "../icons/buttonAddUser";
-import Logo from "../icons/logo";
+import Flechegauche from "./icons/fleche-gauche";
+import ButtonDeleteCompanie from "./icons/buttonDeleteCompany";
+import ButtonAdd from "./icons/buttonAddUser";
+import Logo from "./icons/logo";
 type Props = {};
 
 const HeadButton: React.FC<Props> = ({}) => {

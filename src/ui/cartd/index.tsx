@@ -1,5 +1,5 @@
 import React from "react";
-import Fleche from "../../icons/arrow";
+import Fleche from "../icons/arrow";
 import { Text, Flex, HStack } from "@chakra-ui/react";
 interface Props {}
 
