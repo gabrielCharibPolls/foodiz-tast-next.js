@@ -1,9 +1,9 @@
 import React from "react";
 import Fleche from "../icons/arrow";
 import { Text, Flex, HStack } from "@chakra-ui/react";
-interface Props {}
+import { CarteProps } from "./props";
 
-const Carte: React.FC<Props> = ({}) => {
+const Carte: React.FC<CarteProps> = ({ name, mail, role }) => {
   return (
     <HStack
       justifyContent='space-between'
@@ -14,12 +14,12 @@ const Carte: React.FC<Props> = ({}) => {
       padding='16px'
     >
       <HStack spacing='24px'>
-        <Text as='b'>Stéphane De Groot</Text>
+        <Text as='b'>{name}</Text>
         <Text size='14px' color='#8F95B2' paddingLeft='100px'>
-          stephane.de.goort@foodiz.com
+          {mail}
         </Text>
         <Text size='14px' color='#8F95B2' paddingLeft='100px'>
-          admin
+          {role}
         </Text>
       </HStack>
       <Flex
