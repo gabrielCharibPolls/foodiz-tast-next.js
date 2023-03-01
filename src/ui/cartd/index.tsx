@@ -15,7 +15,7 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
       w={"full"}
     >
       <HStack spacing='24px' w={"full"} flex='1'>
-        <HStack w={"full"} px='100px'>
+        <HStack w={"full"}>
           <Text w='30%' as='b'>
             {name}
           </Text>
@@ -24,7 +24,7 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
             {mail}
           </Text>
 
-          <Text w='30%' size='14px' color='#8F95B2'>
+          <Text size='14px' color='#8F95B2'>
             {role}
           </Text>
         </HStack>
