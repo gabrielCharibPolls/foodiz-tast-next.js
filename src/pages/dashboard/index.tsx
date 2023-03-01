@@ -2,7 +2,7 @@ import React from "react";
 import { Text, Flex, HStack, Box } from "@chakra-ui/react";
 import TopInfo from "@/ui/composents/topInfos";
 import HeadBoutton from "@/ui/composents/headBoutton";
-import AllCarte from "@/ui/composents/allCarte";
+import AllCarte from "@/ui/composents/cartd/allCard";
 import Top from "@/ui/composents/top";
 
 export default function Dashboard() {

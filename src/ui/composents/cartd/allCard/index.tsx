@@ -1,10 +1,8 @@
 import React from "react";
 import { Text, Flex, HStack, VStack } from "@chakra-ui/react";
-import Carte from "./carte";
+import Carte from "..";
 
-type Props = {
-  
-};
+type Props = {};
 
 const AllCarte: React.FC<Props> = ({}) => {
   return (

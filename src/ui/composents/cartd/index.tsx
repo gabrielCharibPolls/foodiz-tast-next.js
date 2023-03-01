@@ -1,9 +1,7 @@
 import React from "react";
-import Fleche from "../icons/fleche";
+import Fleche from "../../icons/arrow";
 import { Text, Flex, HStack } from "@chakra-ui/react";
-interface Props     {
-
-};
+interface Props {}
 
 const Carte: React.FC<Props> = ({}) => {
   return (
@@ -31,7 +29,8 @@ const Carte: React.FC<Props> = ({}) => {
         w='28px'
         h='28px'
         align='center'
-        justify='center'>
+        justify='center'
+      >
         <Fleche />
       </Flex>
     </HStack>
