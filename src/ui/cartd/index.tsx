@@ -3,7 +3,7 @@ import Fleche from "../icons/arrow";
 import { Text, Flex, HStack } from "@chakra-ui/react";
 import { CarteProps } from "./props";
 
-const Carte: React.FC<CarteProps> = ({ name, mail, role }) => {
+const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
   return (
     <HStack
       justifyContent='space-between'
@@ -12,21 +12,22 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role }) => {
       borderRadius='8px'
       bg='white'
       padding='16px'
+      w={"full"}
     >
-      <HStack spacing='24px' flex='1'>
-        <Flex flexDir='column' alignItems='center'>
-          <Text as='b'>{name}</Text>
-        </Flex>
-        <Flex flexDir='column' alignItems='center'>
-          <Text size='14px' color='#8F95B2'>
+      <HStack spacing='24px' w={"full"} flex='1'>
+        <HStack w={"full"} px='100px'>
+          <Text w='30%' as='b'>
+            {name}
+          </Text>
+
+          <Text w='30%' size='14px' color='#8F95B2'>
             {mail}
           </Text>
-        </Flex>
-        <Flex flexDir='column' alignItems='center'>
-          <Text size='14px' color='#8F95B2'>
+
+          <Text w='30%' size='14px' color='#8F95B2'>
             {role}
           </Text>
-        </Flex>
+        </HStack>
       </HStack>
       <Flex
         bg='teal.500'
@@ -36,6 +37,7 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role }) => {
         h='28px'
         align='center'
         justify='center'
+        onClick={onClick}
       >
         <Fleche />
       </Flex>
