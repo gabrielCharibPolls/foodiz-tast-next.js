@@ -18,7 +18,7 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
         <HStack w={"full"}>
           <Text w='30%' as='b'>
             {name}
-          </Text>
+          </Text>           
 
           <Text w='30%' size='14px' color='#8F95B2'>
             {mail}
