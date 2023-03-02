@@ -1,11 +1,13 @@
 import React from "react";
 import { ErrorMessage, useFormik } from "formik";
 import Call_to_Action_addUser from "@/ui/call_to_action/call_to_action_add_user";
+import saveButton from "@/ui/buttons/saveButton";
 import {
   Button,
   Flex,
   FormControl,
   FormLabel,
+  HStack,
   Input,
   Select,
 } from "@chakra-ui/react";
@@ -38,79 +40,86 @@ const SignupForm = () => {
   });
 
   return (
-    <Flex>
-         <Call_to_Action_addUser />
-    </Flex>
-    <form onSubmit={formik.handleSubmit}>
-      <FormControl id='firstName' isRequired>
-        <FormLabel>First Name</FormLabel>
-        <Input
-          type='text'
-          name='firstName'
-          value={formik.values.firstName}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          isInvalid={
-            formik.touched.firstName && Boolean(formik.errors.firstName)
-          }
-        />
-      </FormControl>
-   
-      <FormControl id='lastName' isRequired>
-        <FormLabel>Last Name</FormLabel>
-        <Input
-          type='text'
-          name='lastName'
-          value={formik.values.lastName}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          isInvalid={formik.touched.lastName && Boolean(formik.errors.lastName)}
-        />
-      </FormControl>
+    <>
+      
+      <Call_to_Action_addUser />
+      <Flex>
+        <form onSubmit={formik.handleSubmit}>
+          <FormControl id='firstName' isRequired>
+            <FormLabel>First Name</FormLabel>
+            <Input
+              type='text'
+              name='firstName'
+              value={formik.values.firstName}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              isInvalid={
+                formik.touched.firstName && Boolean(formik.errors.firstName)
+              }
+            />
+          </FormControl>
 
-      <FormControl id='email' isRequired>
-        <FormLabel>Email Address</FormLabel>
-        <Input
-          type='email'
-          name='email'
-          value={formik.values.email}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          isInvalid={formik.touched.email && Boolean(formik.errors.email)}
-        />
-      </FormControl>
+          <FormControl id='lastName' isRequired>
+            <FormLabel>Last Name</FormLabel>
+            <Input
+              type='text'
+              name='lastName'
+              value={formik.values.lastName}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              isInvalid={
+                formik.touched.lastName && Boolean(formik.errors.lastName)
+              }
+            />
+          </FormControl>
 
-      <FormControl id='phone' isRequired>
-        <FormLabel>Phone</FormLabel>
-        <Input
-          type='tel'
-          name='phone'
-          value={formik.values.phone}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          isInvalid={formik.touched.phone && Boolean(formik.errors.phone)}
-        />
-      </FormControl>
+          <FormControl id='email' isRequired>
+            <FormLabel>Email Address</FormLabel>
+            <Input
+              type='email'
+              name='email'
+              value={formik.values.email}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              isInvalid={formik.touched.email && Boolean(formik.errors.email)}
+            />
+          </FormControl>
 
-      <FormControl id='userType' isRequired>
-        <FormLabel>User Type</FormLabel>
-        <Select
-          name='userType'
-          value={formik.values.userType}
-          onChange={formik.handleChange}
-          onBlur={formik.handleBlur}
-          isInvalid={formik.touched.userType && Boolean(formik.errors.userType)}
-        >
-          <option value=''>Sélectionner un type d'utilisateur</option>
-          <option value='client'>Client</option>
-          <option value='fournisseur'>Fournisseur</option>
-        </Select>
-      </FormControl>
+          <FormControl id='phone' isRequired>
+            <FormLabel>Phone</FormLabel>
+            <Input
+              type='tel'
+              name='phone'
+              value={formik.values.phone}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              isInvalid={formik.touched.phone && Boolean(formik.errors.phone)}
+            />
+          </FormControl>
 
-      <Button type='submit' mt={4} colorScheme='blue'>
-        Submit
-      </Button>
-    </form>
+          <FormControl id='userType' isRequired>
+            <FormLabel>User Type</FormLabel>
+            <Select
+              name='userType'
+              value={formik.values.userType}
+              onChange={formik.handleChange}
+              onBlur={formik.handleBlur}
+              isInvalid={
+                formik.touched.userType && Boolean(formik.errors.userType)
+              }
+            >
+              <option value=''>Sélectionner un type d'utilisateur</option>
+              <option value='client'>Client</option>
+              <option value='fournisseur'>Fournisseur</option>
+            </Select>
+          </FormControl>
+
+          <Button type='submit' mt={4} colorScheme='blue'>
+            Submit
+          </Button>
+        </form>
+      </Flex>
+    </>
   );
 };
 

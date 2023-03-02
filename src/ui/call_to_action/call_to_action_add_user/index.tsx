@@ -5,6 +5,7 @@ import ButtonDeleteCompanie from "src/ui/icons/buttonDeleteCompany";
 import ButtonAdd from "src/ui/icons/buttonAddUser";
 import Link from "next/link";
 import Flechegauche from "src/ui/icons/fleche-gauche";
+import SaveButton from "@/ui/buttons/saveButton";
 type Props = {};
 
 const Call_to_Action_addUser: React.FC<Props> = ({}) => {
@@ -31,14 +32,12 @@ const Call_to_Action_addUser: React.FC<Props> = ({}) => {
         </HStack>
 
         <Text size='16px' fontFamily='inter' align='center' fontWeight='bold'>
-          Nightborn
+          Add new user
         </Text>
       </HStack>
 
       <HStack paddingRight='32px'>
-        <ButtonDeleteCompanie />
-
-        <ButtonAdd />
+        <SaveButton />
       </HStack>
     </HStack>
   );
