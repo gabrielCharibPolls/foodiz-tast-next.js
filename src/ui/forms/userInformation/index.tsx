@@ -43,9 +43,24 @@ const UserInformationForms = () => {
   });
 
   return (
+    /////////////////////////////////////////////////////////
+    ///////le code usertype
+
+    /**
+
+    <FormControl id='userType'>
+    <FormLabel>User Type</FormLabel>
+    <Field as={Select} name='userType'>
+      <option value='normal'>Normal</option>
+      <option value='admin'>Admin</option>
+    </Field>
+  </FormControl>
+*/
+    //////////////////////////////////////////////
+
     <>
       <VStack>
-        <Card border='1px #E9EAF0'>
+        <Card border='1px #E9EAF0' maxWidth='892px'>
           <CardHeader>
             <Heading size='md' pb='12px'>
               User informations
