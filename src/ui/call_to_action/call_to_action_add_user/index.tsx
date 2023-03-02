@@ -1,14 +1,13 @@
 import React from "react";
-import Fleche from "./icons/loupe";
+import Fleche from "src/ui/icons/fleche-gauche";
 import { Text, Flex, HStack } from "@chakra-ui/react";
-import Flechegauche from "./icons/fleche-gauche";
-import ButtonDeleteCompanie from "./icons/buttonDeleteCompany";
-import ButtonAdd from "./icons/buttonAddUser";
-import Logo from "./icons/logo";
+import ButtonDeleteCompanie from "src/ui/icons/buttonDeleteCompany";
+import ButtonAdd from "src/ui/icons/buttonAddUser";
 import Link from "next/link";
+import Flechegauche from "src/ui/icons/fleche-gauche";
 type Props = {};
 
-const HeadButton: React.FC<Props> = ({}) => {
+const Call_to_Action_addUser: React.FC<Props> = ({}) => {
   return (
     <HStack justifyContent='space-between' py='11px'>
       <HStack
@@ -30,7 +29,7 @@ const HeadButton: React.FC<Props> = ({}) => {
         >
           <Flechegauche />
         </HStack>
-        <Logo />
+
         <Text size='16px' fontFamily='inter' align='center' fontWeight='bold'>
           Nightborn
         </Text>
@@ -38,13 +37,11 @@ const HeadButton: React.FC<Props> = ({}) => {
 
       <HStack paddingRight='32px'>
         <ButtonDeleteCompanie />
-        
-        <ButtonAdd 
-          
-        />
+
+        <ButtonAdd />
       </HStack>
     </HStack>
   );
 };
 
-export default HeadButton;
+export default Call_to_Action_addUser;
