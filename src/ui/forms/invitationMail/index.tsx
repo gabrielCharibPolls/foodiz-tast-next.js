@@ -2,15 +2,10 @@ import React from "react";
 import { useFormik } from "formik";
 import {
   Text,
-  Button,
-  Flex,
   FormControl,
   FormLabel,
   HStack,
-  Input,
   Card,
-  CardHeader,
-  Select,
   VStack,
   Heading,
   Checkbox,
@@ -57,9 +52,9 @@ const InvitationMailForm = () => {
             color='#8F95B2'
             pt='-45px'
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero,
-            volutpat pharetra commodo nunc. Lacus malesuada fermentum, elit
-            egestas lorem bibendum.
+            You can send a invitation mail to the user. He will be redirected to
+            his company’s application and asked to finalize his account by
+            creating his password
           </Text>
 
           <FormControl id='invitationSent' isRequired>
@@ -83,7 +78,7 @@ const InvitationMailForm = () => {
                     Boolean(formik.errors.invitationSent)
                   }
                 />
-                <FormLabel ml={2}>Invitation envoyée</FormLabel>
+                <FormLabel ml={2}>Send invitation mail</FormLabel>
               </HStack>
             </FormLabel>
           </FormControl>

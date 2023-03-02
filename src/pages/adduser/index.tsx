@@ -1,6 +1,5 @@
 import React from "react";
-import { Text, Flex, HStack, Box } from "@chakra-ui/react";
-
+import { Text, Flex, HStack, Box, VStack } from "@chakra-ui/react";
 import Call_to_Action_addUser from "@/ui/call_to_action/call_to_action_add_user";
 import UserInformationForms from "@/ui/forms/userInformation";
 import UserType from "@/ui/forms/userType";
@@ -15,9 +14,11 @@ export default function AddUser() {
   return (
     <>
       <Call_to_Action_addUser />
-      <UserInformationForms />
-      <UserType />
-      <InvitationMail />
+      <VStack>
+        <UserInformationForms />
+        <UserType />
+        <InvitationMail />
+      </VStack>
     </>
   );
 }
