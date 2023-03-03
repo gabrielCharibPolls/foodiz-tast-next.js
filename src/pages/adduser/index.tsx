@@ -11,12 +11,12 @@ export default function AddUser() {
     <>
       <Call_to_Action_addUser />
 
-      <HStack>
+      <HStack paddingLeft='212px'>
         <VStack>
           <SideMenu type={false} />
         </VStack>
 
-        <VStack p='12px' pl='736px' pr='32px'>
+        <VStack p='12px' pl='936px' pr='32px'>
           <UserInformationForms />
           <UserType />
           <InvitationMail />
