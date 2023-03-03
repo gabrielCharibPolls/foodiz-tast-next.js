@@ -38,7 +38,6 @@ const UserInformationForms = () => {
           bg='#FFFFFF'
           borderRadius='8px'
           padding='24px 20px'
-          display='flex'
           flexDirection='column'
           alignItems='flex-start'
           pb='32px'
@@ -48,10 +47,8 @@ const UserInformationForms = () => {
           </Heading>
 
           <Text
-            maxWidth='720px'
             fontFamily='Inter'
             fontStyle='normal'
-            fontWeight='400'
             fontSize='15px'
             color='#8F95B2'
             pt='-45px'

@@ -43,145 +43,126 @@ const UserInformationForms = () => {
   });
 
   return (
-    /////////////////////////////////////////////////////////
-    ///////le code usertype
+    <Card border='1px #E9EAF0' width={"100%"} marginLeft={"20px"}>
+      <CardHeader>
+        <Heading size='md' pb='12px'>
+          User informations
+        </Heading>
 
-    /**
+        <Text
+          maxWidth='720px'
+          fontFamily='Inter'
+          fontStyle='normal'
+          fontWeight='400'
+          fontSize='15px'
+          color='#8F95B2'
+          flex='none'
+          order='1'
+          alignSelf='stretch'
+          flexGrow='0'
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero,
+          volutpat pharetra commodo nunc. Lacus malesuada fermentum, elit
+          egestas lorem bibendum.
+        </Text>
+      </CardHeader>
 
-    <FormControl id='userType'>
-    <FormLabel>User Type</FormLabel>
-    <Field as={Select} name='userType'>
-      <option value='normal'>Normal</option>
-      <option value='admin'>Admin</option>
-    </Field>
-  </FormControl>
-*/
-    //////////////////////////////////////////////
+      <HStack pl='20px' pr='20px'>
+        <FormControl id='firstName' isRequired pr='20px'>
+          <FormLabel
+            fontFamily='Inter'
+            fontStyle='normal'
+            fontWeight='500'
+            fontSize='12px'
+            display='flex'
+            color='#8F95B2'
+          >
+            FIRST NAME
+          </FormLabel>
+          <Input
+            type='text'
+            name='firstName'
+            value={formik.values.firstName}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            isInvalid={
+              formik.touched.firstName && Boolean(formik.errors.firstName)
+            }
+          />
+        </FormControl>
 
-    <>
-      <VStack>
-        <Card border='1px #E9EAF0' maxWidth='892px'>
-          <CardHeader>
-            <Heading size='md' pb='12px'>
-              User informations
-            </Heading>
+        <FormControl id='lastName' isRequired>
+          <FormLabel
+            fontFamily='Inter'
+            fontStyle='normal'
+            fontWeight='500'
+            fontSize='12px'
+            display='flex'
+            color='#8F95B2'
+          >
+            LAST NAME
+          </FormLabel>
+          <Input
+            type='text'
+            name='lastName'
+            value={formik.values.lastName}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            isInvalid={
+              formik.touched.lastName && Boolean(formik.errors.lastName)
+            }
+          />
+        </FormControl>
+      </HStack>
+      <HStack pl='20px' pb='20px' pr='20px' pt='32px'>
+        <FormControl id='email' isRequired pr='20px'>
+          <FormLabel
+            fontFamily='Inter'
+            fontStyle='normal'
+            fontWeight='500'
+            fontSize='12px'
+            display='flex'
+            color='#8F95B2'
+          >
+            EMAIL ADDRESS
+          </FormLabel>
+          <Input
+            type='email'
+            name='email'
+            value={formik.values.email}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            isInvalid={formik.touched.email && Boolean(formik.errors.email)}
+          />
+        </FormControl>
 
-            <Text
-              maxWidth='720px'
-              fontFamily='Inter'
-              fontStyle='normal'
-              fontWeight='400'
-              fontSize='15px'
-              color='#8F95B2'
-              flex='none'
-              order='1'
-              alignSelf='stretch'
-              flexGrow='0'
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero,
-              volutpat pharetra commodo nunc. Lacus malesuada fermentum, elit
-              egestas lorem bibendum.
-            </Text>
-          </CardHeader>
-
-          <HStack pl='20px' pr='20px'>
-            <FormControl id='firstName' isRequired pr='20px'>
-              <FormLabel
-                fontFamily='Inter'
-                fontStyle='normal'
-                fontWeight='500'
-                fontSize='12px'
-                display='flex'
-                color='#8F95B2'
-              >
-                FIRST NAME
-              </FormLabel>
-              <Input
-                type='text'
-                name='firstName'
-                value={formik.values.firstName}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                isInvalid={
-                  formik.touched.firstName && Boolean(formik.errors.firstName)
-                }
-              />
-            </FormControl>
-
-            <FormControl id='lastName' isRequired>
-              <FormLabel
-                fontFamily='Inter'
-                fontStyle='normal'
-                fontWeight='500'
-                fontSize='12px'
-                display='flex'
-                color='#8F95B2'
-              >
-                LAST NAME
-              </FormLabel>
-              <Input
-                type='text'
-                name='lastName'
-                value={formik.values.lastName}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                isInvalid={
-                  formik.touched.lastName && Boolean(formik.errors.lastName)
-                }
-              />
-            </FormControl>
-          </HStack>
-          <HStack pl='20px' pb='20px' pr='20px' pt='32px'>
-            <FormControl id='email' isRequired pr='20px'>
-              <FormLabel
-                fontFamily='Inter'
-                fontStyle='normal'
-                fontWeight='500'
-                fontSize='12px'
-                display='flex'
-                color='#8F95B2'
-              >
-                EMAIL ADDRESS
-              </FormLabel>
-              <Input
-                type='email'
-                name='email'
-                value={formik.values.email}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                isInvalid={formik.touched.email && Boolean(formik.errors.email)}
-              />
-            </FormControl>
-
-            <FormControl id='phone' isRequired>
-              <FormLabel
-                fontFamily='Inter'
-                fontStyle='normal'
-                fontWeight='500'
-                fontSize='12px'
-                display='flex'
-                color='#8F95B2'
-              >
-                PHONE (optionnal)
-              </FormLabel>
-              <Input
-                type='tel'
-                name='phone'
-                value={formik.values.phone}
-                onChange={formik.handleChange}
-                onBlur={formik.handleBlur}
-                isInvalid={formik.touched.phone && Boolean(formik.errors.phone)}
-              />
-            </FormControl>
-          </HStack>
-          {/* <form onSubmit={formik.handleSubmit}>
+        <FormControl id='phone'>
+          <FormLabel
+            fontFamily='Inter'
+            fontStyle='normal'
+            fontWeight='500'
+            fontSize='12px'
+            display='flex'
+            color='#8F95B2'
+          >
+            PHONE (optionnal)
+          </FormLabel>
+          <Input
+            type='tel'
+            name='phone'
+            value={formik.values.phone}
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            isInvalid={formik.touched.phone && Boolean(formik.errors.phone)}
+          />
+        </FormControl>
+      </HStack>
+      {/* <form onSubmit={formik.handleSubmit}>
             <Button type='submit' mt={4} colorScheme='blue'>
               Submit
             </Button>
           </form> */}
-        </Card>
-      </VStack>
-    </>
+    </Card>
   );
 };
 

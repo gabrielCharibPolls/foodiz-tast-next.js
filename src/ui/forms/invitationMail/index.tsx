@@ -28,7 +28,7 @@ const InvitationMailForm = () => {
 
   return (
     <>
-      <VStack>
+      <VStack >
         <Card
           border='1px solid #E9EAF0'
           bg='#FFFFFF'

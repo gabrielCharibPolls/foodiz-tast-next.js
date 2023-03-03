@@ -10,11 +10,10 @@ type Props = {};
 
 const Call_to_Action_addUser: React.FC<Props> = ({}) => {
   return (
-    <HStack justifyContent='space-between' py='11px'>
+    <HStack justifyContent='space-between' py='11px' bg='white'>
       <HStack
         p='12px'
         py='18.5'
-        bg='white'
         paddingLeft='32px'
         height='36px'
         paddingRight='22px'
