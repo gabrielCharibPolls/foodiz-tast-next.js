@@ -37,9 +37,7 @@ const UserInformationForms = () => {
           border='1px solid #E9EAF0'
           bg='#FFFFFF'
           borderRadius='8px'
-          padding='24px 20px'
-          flexDirection='column'
-          alignItems='flex-start'
+          padding='24px 20px '
           pb='32px'
         >
           <Heading as='h2' size='md' pb='12px'>
@@ -51,7 +49,6 @@ const UserInformationForms = () => {
             fontStyle='normal'
             fontSize='15px'
             color='#8F95B2'
-            pt='-45px'
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero,
             volutpat pharetra commodo nunc. Lacus malesuada fermentum, elit
@@ -63,9 +60,7 @@ const UserInformationForms = () => {
               pt='-32px'
               fontFamily='Inter'
               fontStyle='normal'
-              fontWeight='500'
               fontSize='12px'
-              display='flex'
               color='#8F95B2'
             >
               TYPE D'UTILISATEUR

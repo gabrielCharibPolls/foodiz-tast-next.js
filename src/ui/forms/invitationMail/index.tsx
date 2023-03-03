@@ -28,7 +28,7 @@ const InvitationMailForm = () => {
 
   return (
     <>
-      <VStack >
+      <VStack w='100%'>
         <Card
           border='1px solid #E9EAF0'
           bg='#FFFFFF'
@@ -36,7 +36,6 @@ const InvitationMailForm = () => {
           padding='24px 20px'
           display='flex'
           flexDirection='column'
-          alignItems='flex-start'
           pb='32px'
         >
           <Heading as='h2' size='md' pb='12px'>
@@ -44,7 +43,6 @@ const InvitationMailForm = () => {
           </Heading>
 
           <Text
-            maxWidth='720px'
             fontFamily='Inter'
             fontStyle='normal'
             fontWeight='400'
