@@ -23,14 +23,14 @@ const SideMenu: React.FC<None> = ({}) => {
     >
       <HStack
         flex='1'
-        p='10px 12px 0px 130px'
         display='flex'
         flexDirection='row'
         alignItems='center'
-        padding='10px 12px'
-        width='240px'
+        padding='10px 12px '
+        width='305px'
         height='35px'
         bg='#FBF8EE'
+        mr='15px'
         borderRadius='6px'
         order='0'
         alignSelf='stretch'
@@ -43,6 +43,7 @@ const SideMenu: React.FC<None> = ({}) => {
           lineHeight='15px'
           color='#EDB10E'
           py='10px'
+          pr='25px'
         >
           User informations
         </Text>
@@ -74,7 +75,7 @@ const SideMenu: React.FC<None> = ({}) => {
           User type
         </Text>
       </HStack>
-      <HStack>
+      <HStack p='0px 0px 0px 0px'>
         <Text
           p='10px 12px'
           as='b'
@@ -83,6 +84,7 @@ const SideMenu: React.FC<None> = ({}) => {
           lineHeight='15px'
           color='#8F95B2'
           py='10px'
+          pr='172px'
         >
           Invitation mail{" "}
         </Text>
