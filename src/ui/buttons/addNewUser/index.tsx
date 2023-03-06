@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Flex, Text } from "@chakra-ui/react";
-import Trash from "@/ui/icons/trash";
 import AddLogo from "@/ui/icons/addLogo";
 
 const AddNewUserButton = () => {

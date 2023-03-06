@@ -9,7 +9,6 @@ import SaveIcon from "@/ui/icons/save";
 const SaveButton = () => {
   return (
     <Button
-      display='flex'
       flexDirection='row'
       alignItems='center'
       padding='12px'
@@ -18,18 +17,12 @@ const SaveButton = () => {
       height='32px'
       background='#00504E'
       borderRadius='4px'
-      flex='none'
-      order={1}
-      flexGrow={0}
     >
       <SaveIcon />
       <Text
         fontFamily='Inter'
-        fontStyle='normal'
-        fontWeight={700}
         fontSize='12px'
         lineHeight='15px'
-        textAlign='center'
         color='#FFFFFF'
       >
         Save & Add
