@@ -4,7 +4,7 @@ import { Text, Flex, HStack } from "@chakra-ui/react";
 import Flechegauche from "../icons/leftArrow";
 import ButtonDeleteCompanie from "../icons/buttonDeleteCompany";
 import ButtonAdd from "../icons/buttonAddUser";
-import DeleteButton from "../buttons/deleteButton/new";
+import DeleteButton from "../buttons/deleteButton";
 import Logo from "../icons/logo";
 
 type Props = {};
