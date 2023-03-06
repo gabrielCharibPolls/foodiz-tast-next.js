@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, VStack } from "@chakra-ui/react";
 import TopInfo from "@/ui/topInfos";
-import HeadBoutton from "@/ui/headBoutton";
+import HeadBoutton from "@/ui/topbar/topbarBasic";
 import Top from "@/ui/top";
 
 import Carte from "@/ui/cartd";

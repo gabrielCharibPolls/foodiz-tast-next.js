@@ -1,10 +1,10 @@
 import React from "react";
-import Fleche from "src/ui/icons/fleche-gauche";
+import Fleche from "@/ui/icons/leftArrow";
 import { Text, Flex, HStack } from "@chakra-ui/react";
 import ButtonDeleteCompanie from "src/ui/icons/buttonDeleteCompany";
 import ButtonAdd from "src/ui/icons/buttonAddUser";
 import Link from "next/link";
-import Flechegauche from "src/ui/icons/fleche-gauche";
+import Flechegauche from "@/ui/icons/leftArrow";
 import SaveButton from "@/ui/buttons/saveButton";
 type Props = {};
 

@@ -1,13 +1,17 @@
 import React from "react";
-import Fleche from "./icons/loupe";
+import Fleche from "../icons/loupe";
 import { Text, Flex, HStack } from "@chakra-ui/react";
-import Flechegauche from "./icons/fleche-gauche";
-import ButtonDeleteCompanie from "./icons/buttonDeleteCompany";
-import ButtonAdd from "./icons/buttonAddUser";
-import Logo from "./icons/logo";
-import Link from "next/link";
+import Flechegauche from "../icons/leftArrow";
+import ButtonDeleteCompanie from "../icons/buttonDeleteCompany";
+import ButtonAdd from "../icons/buttonAddUser";
+import DeleteButton from "../buttons/deleteButton/new";
+import Logo from "../icons/logo";
+
 type Props = {};
 
+////////////////////////////
+//changer le const
+////////////////////////
 const HeadButton: React.FC<Props> = ({}) => {
   return (
     <HStack justifyContent='space-between' py='11px'>
@@ -37,11 +41,8 @@ const HeadButton: React.FC<Props> = ({}) => {
       </HStack>
 
       <HStack paddingRight='32px'>
-        <ButtonDeleteCompanie />
-        
-        <ButtonAdd 
-          
-        />
+        {/* <ButtonAdd /> */}
+        <DeleteButton />
       </HStack>
     </HStack>
   );
