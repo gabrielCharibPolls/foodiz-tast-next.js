@@ -5,6 +5,7 @@ import Flechegauche from "../icons/leftArrow";
 import ButtonDeleteCompanie from "../icons/buttonDeleteCompany";
 import ButtonAdd from "../icons/buttonAddUser";
 import DeleteButton from "../buttons/deleteButton";
+import AddLogo from "../icons/addLogo";
 import Logo from "../icons/logo";
 
 type Props = {};
@@ -39,10 +40,13 @@ const HeadButton: React.FC<Props> = ({}) => {
           Nightborn
         </Text>
       </HStack>
-
-      <HStack paddingRight='32px'>
+      //////////////////////////////////////////////////////////// /////demander
+      l'aide pour les positions des buttons
+      ////////////////////////////////////////////////////////////
+      <HStack paddingRight='32px' spacing='6px'>
         {/* <ButtonAdd /> */}
         <DeleteButton />
+        <ButtonAdd />
       </HStack>
     </HStack>
   );
