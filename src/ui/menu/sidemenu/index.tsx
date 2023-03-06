@@ -20,6 +20,7 @@ const SideMenu: React.FC<None> = ({}) => {
       padding='20px'
       // position='absolute'
       top='80px'
+      w='100%'
     >
       <HStack
         flex='1'

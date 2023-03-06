@@ -8,18 +8,20 @@ import SideMenu from "@/ui/menu/sidemenu";
 
 export default function AddUser() {
   return (
-    <Stack width={"100%"} paddingRight={"32px"} backgroundColor={"#FFFFFF"}>
+    <Box bgColor='red' h='100%'>
       <Call_to_Action_addUser />
 
-      <HStack backgroundColor={"#F8F9FC"} paddingTop={"12px"}>
-        <SideMenu type={false} />
+      <HStack p='32px' spacing={"32px"}>
+        <HStack w='30%' alignSelf={"baseline"}>
+          <SideMenu type={false} />
+        </HStack>
 
-        <VStack width={"100%"} justifyContent='s'>
+        <VStack width={"100%"} w='70%'>
           <UserInformationForms />
           <UserType />
           <InvitationMail />
         </VStack>
       </HStack>
-    </Stack>
+    </Box>
   );
 }

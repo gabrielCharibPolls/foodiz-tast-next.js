@@ -43,7 +43,7 @@ const UserInformationForms = () => {
   });
 
   return (
-    <Card border='1px #E9EAF0' width={"100%"} marginLeft={"20px"}>
+    <Card border='1px #E9EAF0' width={"100%"}>
       <CardHeader>
         <Heading size='md' pb='12px'>
           User informations

@@ -15,7 +15,7 @@ type Props = {};
 ////////////////////////
 const HeadButton: React.FC<Props> = ({}) => {
   return (
-    <HStack justifyContent='space-between' py='11px'>
+    <HStack justifyContent={"space-between"} py='11px'>
       <HStack
         p='12px'
         py='18.5'
@@ -43,7 +43,7 @@ const HeadButton: React.FC<Props> = ({}) => {
       //////////////////////////////////////////////////////////// /////demander
       l'aide pour les positions des buttons
       ////////////////////////////////////////////////////////////
-      <HStack paddingRight='32px' spacing='6px'>
+      <HStack flexDirection={"row-reverse"}>
         {/* <ButtonAdd /> */}
         <DeleteButton />
         <ButtonAdd />
