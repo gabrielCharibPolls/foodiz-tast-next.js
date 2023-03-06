@@ -1,8 +1,6 @@
 import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
-type Props = {};
-
-const TopInfo: React.FC<Props> = ({}) => {
+const TopInfo = () => {
   return (
     <HStack
       justifyContent='space-between'

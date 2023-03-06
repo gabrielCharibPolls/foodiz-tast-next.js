@@ -1,9 +1,8 @@
 import React from "react";
 import Loupe from "./icons/loupe";
 import { Text, Flex, Input, Button, Box, Spacer } from "@chakra-ui/react";
-type Props = {};
 
-const Top: React.FC<Props> = ({}) => {
+const Top = () => {
   return (
     <Box>
       <Flex px='32px' paddingTop='24.5px'>

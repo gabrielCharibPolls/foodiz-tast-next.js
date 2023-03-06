@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, VStack } from "@chakra-ui/react";
-import TopInfo from "@/ui/topInfos";
+import TopInfo from "@/ui/top/index";
 import HeadBoutton from "@/ui/topbar/topbarBasic";
 import Top from "@/ui/top";
 
@@ -114,6 +114,7 @@ export default function Dashboard() {
     <>
       <HeadBoutton />
       <TopInfo />
+
       <Box bg='#E7E9F4' pb='280px'>
         <Top />
         <VStack
