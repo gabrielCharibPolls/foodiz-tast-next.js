@@ -12,23 +12,20 @@ export default function AddUser() {
   //composant page ne marche pas
   ///////////////////////////////////////////////////
   return (
-    <>
-      <Page bg='red' />
-      <Box bgColor='#E7E9F4' h='100%' w='100%'>
-        <Topbar />
+    <Page bg='red'>
+      <Topbar />
 
-        <HStack p='32px' spacing={"32px"}>
-          <HStack w='30%' alignSelf={"baseline"}>
-            <SideMenu type={false} />
-          </HStack>
-
-          <VStack width={"100%"} w='70%'>
-            <UserInformationForms />
-            <UserType />
-            <InvitationMail />
-          </VStack>
+      <HStack p='32px' spacing={"32px"}>
+        <HStack w='30%' alignSelf={"baseline"}>
+          <SideMenu type={false} />
         </HStack>
-      </Box>
-    </>
+
+        <VStack width={"100%"}>
+          <UserInformationForms />
+          <UserType />
+          <InvitationMail />
+        </VStack>
+      </HStack>
+    </Page>
   );
 }

@@ -116,25 +116,26 @@ export default function Dashboard() {
   ///////////////////////////////////////////////////////////
   return (
     <>
-      <Page bg='#FFFFF' />
-      <HeadBoutton />
-      <TopInfo />
+      <Page bg='#FFFFF'>
+        <HeadBoutton />
+        <TopInfo />
 
-      <Box bg='#E7E9F4' pb='280px'>
-        <Top />
-        <VStack
-          align='stretch'
-          marginLeft='32px'
-          marginRight='32px'
-          paddingTop='24.5px'
-          justifyContent='space-between'
-          borderRadius='8px'
-        >
-          {userList.map((user) => (
-            <Carte name={user.name} mail={user.mail} role={user.role} />
-          ))}
-        </VStack>
-      </Box>
+        <Box bg='#E7E9F4' pb='280px'>
+          <Top />
+          <VStack
+            align='stretch'
+            marginLeft='32px'
+            marginRight='32px'
+            paddingTop='24.5px'
+            justifyContent='space-between'
+            borderRadius='8px'
+          >
+            {userList.map((user) => (
+              <Carte name={user.name} mail={user.mail} role={user.role} />
+            ))}
+          </VStack>
+        </Box>
+      </Page>
     </>
   );
 }
