@@ -9,7 +9,6 @@ import SaveIcon from "@/ui/icons/save";
 const SaveButton = () => {
   return (
     <Button
-      flexDirection='row'
       alignItems='center'
       padding='12px'
       width='113px'

@@ -111,21 +111,16 @@ export default function Dashboard() {
     },
   ];
 
-  //////////////////////////////////////////////////////////
-  // question => je vois pas le composant page
-  ///////////////////////////////////////////////////////////
   return (
     <>
       <Page bg='#FFFFF'>
         <HeadBoutton />
         <TopInfo />
-
         <Box bg='#E7E9F4' pb='280px'>
           <Top />
           <VStack
-            align='stretch'
-            marginLeft='32px'
             marginRight='32px'
+            marginLeft='32px'
             paddingTop='24.5px'
             justifyContent='space-between'
             borderRadius='8px'

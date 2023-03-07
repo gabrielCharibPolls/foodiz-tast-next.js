@@ -79,13 +79,10 @@ const SideMenu: React.FC<None> = ({}) => {
       <HStack p='0px 0px 0px 0px'>
         <Text
           p='10px 12px'
-          as='b'
           fontFamily='Inter'
           fontWeight='500'
           lineHeight='15px'
           color='#8F95B2'
-          py='10px'
-          pr='172px'
         >
           Invitation mail{" "}
         </Text>
