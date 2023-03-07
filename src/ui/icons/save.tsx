@@ -3,8 +3,8 @@ import React from "react";
 const SaveIcon = () => {
   return (
     <svg
-      width='28'
-      height='28'
+      width='14'
+      height='20'
       viewBox='0 0 15 10'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'

@@ -1,5 +1,6 @@
 import React from "react";
-import { Text, Flex, HStack, Box, VStack, Stack } from "@chakra-ui/react";
+import { HStack, VStack } from "@chakra-ui/react";
+
 import Topbar from "@/ui/topbar/newUser";
 import UserInformationForms from "@/ui/forms/userInformation";
 import UserType from "@/ui/forms/userType";

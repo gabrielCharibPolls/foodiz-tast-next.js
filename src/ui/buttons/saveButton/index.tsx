@@ -1,4 +1,4 @@
-import { Button, Text } from "@chakra-ui/react";
+import { Button, Text, Box } from "@chakra-ui/react";
 import SaveIcon from "@/ui/icons/save";
 //////////////////////////////////////////////////////////////////////////
 //// todo :
@@ -12,13 +12,15 @@ const SaveButton = () => {
       flexDirection='row'
       alignItems='center'
       padding='12px'
-      gap='16px'
       width='113px'
       height='32px'
       background='#00504E'
       borderRadius='4px'
     >
-      <SaveIcon />
+      <Box pr='8px' pb='6px'>
+        <SaveIcon />
+      </Box>
+
       <Text
         fontFamily='Inter'
         fontSize='12px'

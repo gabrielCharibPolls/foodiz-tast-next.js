@@ -2,9 +2,8 @@ import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
 import Flechegauche from "@/ui/icons/leftArrow";
 import SaveButton from "@/ui/buttons/saveButton";
-type Props = {};
 
-const Call_to_Action_addUser: React.FC<Props> = ({}) => {
+const Topbar = () => {
   return (
     <HStack justifyContent='space-between' py='11px' bg='white'>
       <HStack
@@ -32,10 +31,11 @@ const Call_to_Action_addUser: React.FC<Props> = ({}) => {
       </HStack>
 
       <HStack paddingRight='32px'>
+        {/* todo arranger ce button la taille de l'icone  */}
         <SaveButton />
       </HStack>
     </HStack>
   );
 };
 
-export default Call_to_Action_addUser;
+export default Topbar;
