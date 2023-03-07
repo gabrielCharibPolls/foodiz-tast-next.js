@@ -2,6 +2,7 @@ import React from "react";
 import { Box, VStack } from "@chakra-ui/react";
 import TopInfo from "@/ui/top/index";
 import HeadBoutton from "@/ui/topbar/topbarBasic";
+import Page from "@/ui/page";
 import Top from "@/ui/top";
 
 import Carte from "@/ui/cartd";
@@ -110,8 +111,12 @@ export default function Dashboard() {
     },
   ];
 
+  //////////////////////////////////////////////////////////
+  // question => je vois pas le composant page
+  ///////////////////////////////////////////////////////////
   return (
     <>
+      <Page bg='#FFFFF' />
       <HeadBoutton />
       <TopInfo />
 
@@ -124,7 +129,6 @@ export default function Dashboard() {
           paddingTop='24.5px'
           justifyContent='space-between'
           borderRadius='8px'
-          bg='#E7E9F4'
         >
           {userList.map((user) => (
             <Carte name={user.name} mail={user.mail} role={user.role} />

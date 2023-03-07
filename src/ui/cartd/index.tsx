@@ -1,6 +1,6 @@
 import React from "react";
 import Fleche from "../icons/arrow";
-import { Text, Flex, HStack } from "@chakra-ui/react";
+import { Text, Flex, HStack, Button } from "@chakra-ui/react";
 import { CarteProps } from "./props";
 
 const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
@@ -18,7 +18,7 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
         <HStack w={"full"}>
           <Text w='30%' as='b'>
             {name}
-          </Text>           
+          </Text>
 
           <Text w='30%' size='14px' color='#8F95B2'>
             {mail}
@@ -29,6 +29,12 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
           </Text>
         </HStack>
       </HStack>
+      {/* /////////////////////////ce button est bizare /////////////////////////////// */}
+
+      {/* <Button borderRadius='100' w='28px' h='28px' onClick={onClick}>
+        {" "}
+        <Fleche />
+      </Button> */}
       <Flex
         bg='teal.500'
         borderRadius='100'

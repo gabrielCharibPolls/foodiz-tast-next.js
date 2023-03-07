@@ -7,7 +7,7 @@ export default function Start() {
 
   // Effects
   useEffect(() => {
-    router.replace("/adduser");
+    router.replace("dashboard/adduser");
   }, []);
 
   return <Fragment />;

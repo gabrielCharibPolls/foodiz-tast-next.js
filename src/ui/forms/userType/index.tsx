@@ -2,14 +2,9 @@ import React from "react";
 import { useFormik } from "formik";
 import {
   Text,
-  Button,
-  Flex,
   FormControl,
   FormLabel,
-  HStack,
-  Input,
   Card,
-  CardHeader,
   Select,
   VStack,
   Heading,
@@ -38,7 +33,6 @@ const UserInformationForms = () => {
           bg='#FFFFFF'
           borderRadius='8px'
           padding='24px 20px '
-          pb='32px'
         >
           <Heading as='h2' size='md' pb='12px'>
             User type
@@ -57,7 +51,6 @@ const UserInformationForms = () => {
 
           <FormControl id='userType' isRequired>
             <FormLabel
-              pt='-32px'
               fontFamily='Inter'
               fontStyle='normal'
               fontSize='12px'
