@@ -2,16 +2,12 @@ import React from "react";
 import { useFormik } from "formik";
 import {
   Text,
-  Button,
-  Flex,
   FormControl,
   FormLabel,
   HStack,
   Input,
   Card,
   CardHeader,
-  Select,
-  VStack,
   Heading,
 } from "@chakra-ui/react";
 
@@ -97,7 +93,6 @@ const UserInformationForms = () => {
             fontStyle='normal'
             fontWeight='500'
             fontSize='12px'
-            display='flex'
             color='#8F95B2'
           >
             LAST NAME
@@ -115,7 +110,7 @@ const UserInformationForms = () => {
         </FormControl>
       </HStack>
       <HStack pl='20px' pb='20px' pr='20px' pt='32px'>
-        <FormControl id='email' isRequired pr='20px'>
+        <FormControl id='email' pr='20px'>
           <FormLabel
             fontFamily='Inter'
             fontStyle='normal'
@@ -142,7 +137,6 @@ const UserInformationForms = () => {
             fontStyle='normal'
             fontWeight='500'
             fontSize='12px'
-            display='flex'
             color='#8F95B2'
           >
             PHONE (optionnal)

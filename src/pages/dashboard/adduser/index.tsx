@@ -12,7 +12,7 @@ export default function AddUser() {
   //composant page ne marche pas
   ///////////////////////////////////////////////////
   return (
-    <Page bg='red'>
+    <Page bg='#F8F9FC;'>
       <Topbar />
 
       <HStack p='32px' spacing={"32px"}>

@@ -6,7 +6,6 @@ import {
   FormLabel,
   HStack,
   Card,
-  VStack,
   Heading,
   Checkbox,
 } from "@chakra-ui/react";
