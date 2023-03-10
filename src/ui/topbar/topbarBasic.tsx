@@ -5,6 +5,7 @@ import ButtonAdd from "../icons/buttonAddUser";
 import Logo from "../icons/logo";
 import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
 import Trash from "../icons/trash";
+import AddLogo from "../icons/addLogo";
 
 const HeadButton = () => {
   return (
@@ -35,7 +36,11 @@ const HeadButton = () => {
       </HStack>
       <HStack>
         <ButtonTextIcone text='Delete company' startEnhancer=<Trash></Trash> />
-        <ButtonAdd />
+        <ButtonTextIcone
+          text='Add new user'
+          startEnhancer=<AddLogo></AddLogo>
+          bg='#00504E'
+        />
       </HStack>
     </HStack>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import { ButtonTextIconeProps } from "./props";
 
 const ButtonTextIcone = ({
@@ -40,12 +40,13 @@ const ButtonTextIcone = ({
       variant={variant || "solid"}
     >
       {leftIcon && (
-        <Flex
-          pl={`${marginLeftRightIcon || "12px"}`}
+        <Box
+          borderBottom={"px"}
+          pl={`${marginLeftRightIcon || "8px"}`}
           pr={`${marginLeftRightIcon || "8px"}`}
         >
           {leftIcon}
-        </Flex>
+        </Box>
       )}
 
       {icon && (
@@ -54,10 +55,15 @@ const ButtonTextIcone = ({
           pr={`${marginLeftRightIcon || "8px"}`}
         >
           {icon}
+          {/* Add the if statement to check if the icon is a trash icon */}
         </Flex>
       )}
 
-      {startEnhancer && <Flex pl='12px'>{startEnhancer}</Flex>}
+      {startEnhancer && (
+        <Flex pb='6px' pl='12px' pr='0px'>
+          {startEnhancer}
+        </Flex>
+      )}
 
       <Text
         fontFamily={styleFont || "Inter"}

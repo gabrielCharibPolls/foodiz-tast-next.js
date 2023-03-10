@@ -4,19 +4,21 @@ export interface ButtonTextIconeProps {
   text?: string;
   styleFont?: string;
   colorFont?: string;
-  border?: number;
-  padding?: number;
-  borderRadius?: number;
-  radius?: number;
+  border?: string;
+  padding?: string;
+  borderRadius?: string;
+  radius?: string;
+  ///////////////////
+  //props pas util
   icon?: ReactNode;
   leftIcon?: ReactNode;
   startEnhancer?: ReactNode;
   endEnhancer?: ReactNode;
-  marginLeftLeftIcon?: number;
-  marginLeftRightIcon?: number;
-  marginRightLeftIcon?: number;
-  marginRightRightIcon?: number;
-  marginRightrightIcone?: number;
+  marginLeftLeftIcon?: string;
+  marginLeftRightIcon?: string;
+  marginRightLeftIcon?: string;
+  marginRightRightIcon?: string;
+  marginRightrightIcone?: string;
   bg?: string;
   variant?: string;
   width?: string;

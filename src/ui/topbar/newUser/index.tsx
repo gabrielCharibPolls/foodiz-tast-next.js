@@ -2,7 +2,8 @@ import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
 import Flechegauche from "@/ui/icons/leftArrow";
 import SaveButton from "@/ui/buttons/saveButton";
-
+import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
+import SaveIcon from "@/ui/icons/save";
 
 const Topbar = () => {
   return (
@@ -32,8 +33,16 @@ const Topbar = () => {
       </HStack>
 
       <HStack paddingRight='32px'>
-        {/* todo arranger ce button la taille de l'icone  */}
-        <SaveButton />
+        <ButtonTextIcone
+          padding='12px'
+          width='113px'
+          height='32px'
+          borderRadius='4px'
+          marginLeftLeftIcon='12px'
+          bg='#00504E'
+          text='Save & Add'
+          startEnhancer=<SaveIcon></SaveIcon>
+        />
       </HStack>
     </HStack>
   );
