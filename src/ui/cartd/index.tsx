@@ -29,6 +29,12 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
           </Text>
         </HStack>
       </HStack>
+      {/* /////////////////////////ce button est bizare /////////////////////////////// */}
+
+      {/* <Button borderRadius='100' w='28px' h='28px' onClick={onClick}>
+        {" "}
+        <Fleche />
+      </Button> */}
       <Flex
         bg='teal.500'
         borderRadius='100'

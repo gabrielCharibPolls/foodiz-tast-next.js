@@ -1,9 +1,9 @@
 import React from "react";
 import Loupe from "./icons/loupe";
+import AnimatedInput from "./input";
 import { Text, Flex, Input, Button, Box, Spacer } from "@chakra-ui/react";
-type Props = {};
 
-const Top: React.FC<Props> = ({}) => {
+const Top = () => {
   return (
     <Box>
       <Flex px='32px' paddingTop='24.5px'>
@@ -44,16 +44,9 @@ const Top: React.FC<Props> = ({}) => {
           </Text>
         </Button>
         <Spacer />
-        <Box margin='5px'>
-          <Loupe />
+        <Box>
+          <AnimatedInput />
         </Box>
-        <Input
-          w=''
-          variant='unstyled'
-          placeholder='Type to search...'
-          size='xs'
-          paddingRight='48px'
-        />
       </Flex>
     </Box>
   );

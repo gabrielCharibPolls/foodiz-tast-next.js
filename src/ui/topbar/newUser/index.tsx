@@ -1,19 +1,14 @@
 import React from "react";
-import Fleche from "./icons/loupe";
-import { Text, Flex, HStack } from "@chakra-ui/react";
-import Flechegauche from "./icons/fleche-gauche";
-import ButtonDeleteCompanie from "./icons/buttonDeleteCompany";
-import ButtonAdd from "./icons/buttonAddUser";
-import Logo from "./icons/logo";
-type Props = {};
+import { Text, HStack } from "@chakra-ui/react";
+import Flechegauche from "@/ui/icons/leftArrow";
+import SaveButton from "@/ui/buttons/saveButton";
 
-const HeadButton: React.FC<Props> = ({}) => {
+const Topbar = () => {
   return (
-    <HStack justifyContent='space-between' py='11px'>
+    <HStack justifyContent='space-between' py='11px' bg='white'>
       <HStack
         p='12px'
         py='18.5'
-        bg='white'
         paddingLeft='32px'
         height='36px'
         paddingRight='22px'
@@ -29,18 +24,18 @@ const HeadButton: React.FC<Props> = ({}) => {
         >
           <Flechegauche />
         </HStack>
-        <Logo />
+
         <Text size='16px' fontFamily='inter' align='center' fontWeight='bold'>
-          Nightborn
+          Add new user
         </Text>
       </HStack>
 
       <HStack paddingRight='32px'>
-        <ButtonDeleteCompanie />
-        <ButtonAdd />
+        {/* todo arranger ce button la taille de l'icone  */}
+        <SaveButton />
       </HStack>
     </HStack>
   );
 };
 
-export default HeadButton;
+export default Topbar;

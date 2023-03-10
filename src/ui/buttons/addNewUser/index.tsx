@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Flex, Text } from "@chakra-ui/react";
-import Trash from "@/ui/icons/trash";
+import AddLogo from "@/ui/icons/addLogo";
 
-const DeleteButton = () => {
+const AddNewUserButton = () => {
   return (
     <Button
       flexDirection='row'
@@ -10,13 +10,13 @@ const DeleteButton = () => {
       padding='12px'
       width='142px'
       height='32px'
-      background='#F46363'
+      background='#00504E'
       borderRadius='4px'
       order={1}
       flexGrow={0}
     >
       <Flex pl='12px' pr='8px'>
-        <Trash />
+        <AddLogo />
       </Flex>
       <Text
         fontFamily='Inter'
@@ -26,10 +26,10 @@ const DeleteButton = () => {
         color='#FFFFFF'
         pr='12px'
       >
-        Delete company
+        Add new user
       </Text>
     </Button>
   );
 };
 
-export default DeleteButton;
+export default AddNewUserButton;
