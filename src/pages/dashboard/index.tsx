@@ -113,10 +113,10 @@ export default function Dashboard() {
 
   return (
     <>
-      <Page bg='#FFFFF'>
+      <Page bg='#00000'>
         <HeadBoutton />
         <TopInfo />
-        <Box bg='#E7E9F4' pb='280px'>
+        <Box bg='#E7E9F4'>
           <Top />
           <VStack
             marginRight='32px'

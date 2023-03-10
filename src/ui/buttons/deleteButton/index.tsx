@@ -13,7 +13,6 @@ const DeleteButton = () => {
       background='#F46363'
       borderRadius='4px'
       order={1}
-      flexGrow={0}
     >
       <Flex pl='12px' pr='8px'>
         <Trash />

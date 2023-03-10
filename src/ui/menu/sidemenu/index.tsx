@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Text, Flex, HStack, VStack } from "@chakra-ui/react";
+import { Text, HStack, VStack } from "@chakra-ui/react";
 import { None } from "framer-motion";
 
 const SideMenu: React.FC<None> = ({}) => {

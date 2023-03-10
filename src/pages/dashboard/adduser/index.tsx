@@ -9,9 +9,6 @@ import SideMenu from "@/ui/menu/sidemenu";
 import Page from "@/ui/page";
 
 export default function AddUser() {
-  ///////////////////////////////////////////////////
-  //composant page ne marche pas
-  ///////////////////////////////////////////////////
   return (
     <Page bg='#F8F9FC;'>
       <Topbar />

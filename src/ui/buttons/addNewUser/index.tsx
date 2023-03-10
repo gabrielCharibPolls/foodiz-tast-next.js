@@ -13,21 +13,21 @@ const AddNewUserButton = () => {
       background='#00504E'
       borderRadius='4px'
       order={1}
-      flexGrow={0}
     >
       <Flex pl='12px' pr='8px'>
         <AddLogo />
+
+        <Text
+          fontFamily='Inter'
+          fontSize='12px'
+          lineHeight='15px'
+          textAlign='center'
+          color='#FFFFFF'
+          pr='12px'
+        >
+          Add new user
+        </Text>
       </Flex>
-      <Text
-        fontFamily='Inter'
-        fontSize='12px'
-        lineHeight='15px'
-        textAlign='center'
-        color='#FFFFFF'
-        pr='12px'
-      >
-        Add new user
-      </Text>
     </Button>
   );
 };
