@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Flex, Text } from "@chakra-ui/react";
 import { ButtonTextIconeProps } from "./props";
 
-const CustomButton = ({
+const ButtonTextIcone = ({
   text,
   styleFont,
   colorFont,
@@ -10,7 +10,7 @@ const CustomButton = ({
   padding,
   borderRadius,
   /////////////////////////////////////////////////
-  ///voir si on peut suprimer ce props 
+  ///voir si on peut suprimer ce props
   ///////////////////////////////////////////////
   radius,
   icon,
@@ -76,4 +76,4 @@ const CustomButton = ({
   );
 };
 
-export default CustomButton;
+export default ButtonTextIcone;
