@@ -41,7 +41,6 @@ const ButtonTextIcone = ({
     >
       {leftIcon && (
         <Box
-          borderBottom={"px"}
           pl={`${marginLeftRightIcon || "8px"}`}
           pr={`${marginLeftRightIcon || "8px"}`}
         >
@@ -60,7 +59,7 @@ const ButtonTextIcone = ({
       )}
 
       {startEnhancer && (
-        <Flex pb='6px' pl='12px' pr='0px'>
+        <Flex pb='2px' pl='12px' pr='0px'>
           {startEnhancer}
         </Flex>
       )}
