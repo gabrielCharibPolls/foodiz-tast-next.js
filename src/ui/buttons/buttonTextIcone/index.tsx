@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, HStack, Text } from "@chakra-ui/react";
 import { ButtonTextIconeProps } from "./props";
+import Flechegauche from "../../icons/leftArrow";
 
 const ButtonTextIcone = ({
   text,
@@ -48,20 +49,11 @@ const ButtonTextIcone = ({
         </Box>
       )}
 
-      {icon && (
-        <Flex
-          pl={`${marginLeftRightIcon || "12px"}`}
-          pr={`${marginLeftRightIcon || "8px"}`}
-        >
-          {icon}
-          {/* Add the if statement to check if the icon is a trash icon */}
-        </Flex>
-      )}
-
       {startEnhancer && (
-        <Flex pb='2px' pl='12px' pr='0px'>
+        <HStack>
+          pb='2px' pl='12px' pr='0px'
           {startEnhancer}
-        </Flex>
+        </HStack>
       )}
 
       <Text

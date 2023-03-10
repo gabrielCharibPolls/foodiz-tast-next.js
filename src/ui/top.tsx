@@ -2,7 +2,7 @@ import React from "react";
 
 import AnimatedInput from "./input";
 import { Text, Flex, Button, Box, Spacer } from "@chakra-ui/react";
- 
+
 const Top = () => {
   return (
     <Box>

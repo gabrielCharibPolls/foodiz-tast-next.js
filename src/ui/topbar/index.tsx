@@ -1,8 +1,13 @@
-import React, { ReactElement } from "react";
-import { Text, HStack } from "@chakra-ui/react";
+import React from "react";
+import { Text, HStack, Flex } from "@chakra-ui/react";
 import { TopbarProps } from "./props";
 
 const Topbar = ({
+  ////////////////////////////////////////////////////////////////
+  ///utiliser startEnhancer  endEnhancer
+  ////////////////////////////////////////////////////////////////
+  startEnhancer,
+  endEnhancer,
   text,
   styleFont,
   colorFont,
@@ -22,6 +27,18 @@ const Topbar = ({
         height='36px'
         paddingRight='22px'
       >
+
+      {startEnhancer && (
+
+
+        <Flex pb='2px' pl='12px' pr='0px'>
+          {startEnhancer}
+        </Flex>
+
+
+
+      )}
+
         {arrowLeft}
         {logo}
         <Text

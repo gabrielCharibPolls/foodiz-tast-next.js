@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
-const TopInfo = () => {
+const Tab = () => {
   return (
     <HStack
       justifyContent='space-between'
@@ -36,4 +36,4 @@ const TopInfo = () => {
   );
 };
 
-export default TopInfo;
+export default Tab;

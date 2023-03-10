@@ -8,8 +8,9 @@ export interface ButtonTextIconeProps {
   padding?: string;
   borderRadius?: string;
   radius?: string;
-  ///////////////////
+  ////////////////////////////////////////////
   //props pas util
+  ////////////////////////////////////////
   icon?: ReactNode;
   leftIcon?: ReactNode;
   startEnhancer?: ReactNode;

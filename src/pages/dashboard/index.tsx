@@ -1,9 +1,12 @@
 import React from "react";
 import { Box, VStack } from "@chakra-ui/react";
-import TopInfo from "@/ui/top/index";
+import Tab from "@/ui/top/index";
 import HeadBoutton from "@/ui/topbar/topbarBasic";
 import Page from "@/ui/page";
 import Top from "@/ui/top";
+import Topbar from "@/ui/topbar";
+import LeftArrow from "@/ui/icons/leftArrow";
+import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
 
 import Carte from "@/ui/cartd";
 
@@ -114,8 +117,9 @@ export default function Dashboard() {
   return (
     <>
       <Page bg='#00000'>
+        <Topbar text='Nightborn' icone={<LeftArrow />}></Topbar>
         <HeadBoutton />
-        <TopInfo />
+        <Tab />
         <Box bg='#E7E9F4'>
           <Top />
           <VStack
