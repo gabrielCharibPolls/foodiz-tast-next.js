@@ -1,7 +1,6 @@
 import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
 import Flechegauche from "../icons/leftArrow";
-import ButtonAdd from "../icons/buttonAddUser";
 import Logo from "../icons/logo";
 import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
 import Trash from "../icons/trash";
@@ -35,10 +34,10 @@ const HeadButton = () => {
         </Text>
       </HStack>
       <HStack>
-        <ButtonTextIcone text='Delete company' startEnhancer=<Trash></Trash> />
+        <ButtonTextIcone text='Delete company' startEnhancer={<Trash></Trash> }/>
         <ButtonTextIcone
           text='Add new user'
-          startEnhancer=<AddLogo></AddLogo>
+          startEnhancer={<AddLogo></AddLogo>}
           bg='#00504E'
         />
       </HStack>

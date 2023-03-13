@@ -5,8 +5,11 @@ import HeadBoutton from "@/ui/topbar/topbarBasic";
 import Page from "@/ui/page";
 import Top from "@/ui/top";
 import Topbar from "@/ui/topbar";
+import Logo from "@/ui/icons/logo";
 import LeftArrow from "@/ui/icons/leftArrow";
 import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
+import Trash from "@/ui/icons/trash";
+import AddLogo from "@/ui/icons/addLogo";
 
 import Carte from "@/ui/cartd";
 
@@ -117,6 +120,24 @@ export default function Dashboard() {
   return (
     <>
       <Page bg='#00000'>
+        <Topbar
+          logo={<Logo />}
+          startEnhancer={<LeftArrow />}
+          text='Nightborn'
+          button={
+            <ButtonTextIcone
+              text='Delete company'
+              startEnhancer={<Trash></Trash>}
+            />
+          }
+          button2={
+            <ButtonTextIcone
+              text='Add new user'
+              startEnhancer={<AddLogo></AddLogo>}
+              bg='#00504E'
+            />
+          }
+        ></Topbar>
         <HeadBoutton />
         <Tab />
         <Box bg='#E7E9F4'>

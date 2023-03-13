@@ -27,17 +27,19 @@ const Topbar = ({
         height='36px'
         paddingRight='22px'
       >
-
-      {startEnhancer && (
-
-
-        <Flex pb='2px' pl='12px' pr='0px'>
-          {startEnhancer}
-        </Flex>
-
-
-
-      )}
+        {startEnhancer && (
+          <HStack
+            bg='teal.500'
+            borderRadius='100'
+            background='#E7E9F4'
+            w='28px'
+            h='28px'
+            align='center'
+            justify='center'
+          >
+            {startEnhancer}
+          </HStack>
+        )}
 
         {arrowLeft}
         {logo}
