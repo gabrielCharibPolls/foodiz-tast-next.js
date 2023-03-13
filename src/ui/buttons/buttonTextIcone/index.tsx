@@ -1,31 +1,24 @@
 import React from "react";
-import { Box, Button, Flex, HStack, Text } from "@chakra-ui/react";
+import { Button, Flex, HStack, Text } from "@chakra-ui/react";
 import { ButtonTextIconeProps } from "./props";
-import Flechegauche from "../../icons/leftArrow";
+
 
 const ButtonTextIcone = ({
   text,
-  styleFont,
-  colorFont,
+  textFont,
+  textcolor,
   border,
   padding,
   borderRadius,
-  /////////////////////////////////////////////////
-  ///voir si on peut suprimer ce props
-  ///////////////////////////////////////////////
-  radius,
-  icon,
-  leftIcon,
   startEnhancer,
   endEnhancer,
-  marginLeftRightIcon,
   marginRightLeftIcon,
   marginRightRightIcon,
   bg,
   variant,
   width,
   height,
-  color,
+  colorButton,
 }: ButtonTextIconeProps) => {
   return (
     <Button
@@ -37,37 +30,26 @@ const ButtonTextIcone = ({
       background={bg || "#F46363"}
       borderRadius={borderRadius || "4px"}
       border={border}
-      color={color}
+      color={colorButton}
       variant={variant || "solid"}
     >
-      {leftIcon && (
-        <Box
-          pl={`${marginLeftRightIcon || "8px"}`}
-          pr={`${marginLeftRightIcon || "8px"}`}
-        >
-          {leftIcon}
-        </Box>
-      )}
-
       {startEnhancer && (
-        <HStack>
-          pb='2px' pl='12px' pr='0px'
+        <HStack pb='2px' pl='12px' pr='0px'>
           {startEnhancer}
         </HStack>
       )}
 
       <Text
-        fontFamily={styleFont || "Inter"}
+        fontFamily={textFont || "Inter"}
         fontSize='12px'
         lineHeight='15px'
         textAlign='center'
-        color={colorFont || "#FFFFFF"}
+        color={textcolor || "#FFFFFF"}
         pr={`${marginRightLeftIcon || "12px"}`}
         pl={`${marginRightRightIcon || "12px"}`}
       >
         {text || "Default Text"}
       </Text>
-
       {endEnhancer && <Flex pr='12px'>{endEnhancer}</Flex>}
     </Button>
   );

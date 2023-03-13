@@ -117,7 +117,6 @@ export default function Dashboard() {
   return (
     <>
       <Page bg='#00000'>
-        <Topbar text='Nightborn' icone={<LeftArrow />}></Topbar>
         <HeadBoutton />
         <Tab />
         <Box bg='#E7E9F4'>
