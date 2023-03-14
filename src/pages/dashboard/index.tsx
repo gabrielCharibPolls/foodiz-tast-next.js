@@ -3,7 +3,7 @@ import { Box, VStack } from "@chakra-ui/react";
 import Tab from "@/ui/top/index";
 import HeadBoutton from "@/ui/topbar/topbarBasic";
 import Page from "@/ui/page";
-import Top from "@/ui/top";
+
 import Topbar from "@/ui/topbar";
 import Logo from "@/ui/icons/logo";
 import LeftArrow from "@/ui/icons/leftArrow";
@@ -121,8 +121,8 @@ export default function Dashboard() {
     <>
       <Page bg='#00000'>
         <Topbar
-          logo={<Logo />}
           startEnhancer={<LeftArrow />}
+          logo={<Logo />}
           text='Nightborn'
           button={
             <ButtonTextIcone
@@ -138,10 +138,9 @@ export default function Dashboard() {
             />
           }
         ></Topbar>
-        <HeadBoutton />
+
         <Tab />
         <Box bg='#E7E9F4'>
-          <Top />
           <VStack
             marginRight='32px'
             marginLeft='32px'

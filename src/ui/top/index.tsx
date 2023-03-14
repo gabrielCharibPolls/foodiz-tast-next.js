@@ -1,6 +1,5 @@
 import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
-
 const Tab = () => {
   return (
     <HStack

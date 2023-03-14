@@ -1,6 +1,6 @@
 import React from "react";
 
-const Flechegauche = () => {
+const LeftArrow = () => {
   return (
     <svg
       width='18'
@@ -26,4 +26,4 @@ const Flechegauche = () => {
     </svg>
   );
 };
-export default Flechegauche;
+export default LeftArrow;

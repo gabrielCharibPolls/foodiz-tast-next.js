@@ -1,7 +1,7 @@
 import { ReactElement, ReactNode } from "react";
 
 export type TopbarProps = {
-  startEnhancer?: string;
+  startEnhancer?: ReactElement;
   endEnhancer?: string;
   text?: string;
   styleFont?: string;
