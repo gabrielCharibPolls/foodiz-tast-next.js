@@ -1,10 +1,10 @@
 import React from "react";
 import { HStack, VStack } from "@chakra-ui/react";
-import Topbar from "@/ui/topbar/newUser";
-import UserInformationForms from "@/ui/forms/userInformation";
-import UserType from "@/ui/forms/userType";
-import InvitationMail from "@/ui/forms/invitationMail";
-import SideMenu from "@/ui/menu/sidemenu";
+import Topbar from "@/ui/top-bar/newUser";
+import UserInformationForms from "@/ui/forms/user-information";
+import UserType from "@/ui/forms/user-type";
+import InvitationMail from "@/ui/forms/invitation-mail";
+import SideMenu from "@/ui/menu/sideMenu";
 import Page from "@/ui/page";
 
 export default function AddUser() {

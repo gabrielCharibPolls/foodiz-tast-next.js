@@ -3,7 +3,7 @@ import { Box, VStack } from "@chakra-ui/react";
 import Tab from "@/ui/top/index";
 import Page from "@/ui/page";
 
-import Topbar from "@/ui/topbar";
+import Topbar from "@/ui/top-bar";
 import Logo from "@/ui/icons/logo";
 import LeftArrow from "@/ui/icons/leftArrow";
 import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
