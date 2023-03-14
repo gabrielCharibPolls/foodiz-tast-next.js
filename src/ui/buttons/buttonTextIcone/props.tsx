@@ -1,11 +1,11 @@
 import { ButtonProps } from "@chakra-ui/react";
-import { ReactNode } from "react";
+import { ReactElement } from "react";
 
 export interface ButtonTextIconeProps extends ButtonProps {
   text?: string;
   textFont?: string;
   textcolor?: string;
-  startEnhancer?: string;
+  startEnhancer?: ReactElement;
   endEnhancer?: string;
   marginLeftLeftIcon?: string;
   marginLeftRightIcon?: string;

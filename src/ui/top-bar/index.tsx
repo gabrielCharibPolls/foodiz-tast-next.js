@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, HStack, Flex } from "@chakra-ui/react";
+import { Text, HStack } from "@chakra-ui/react";
 import { TopbarProps } from "./props";
 
 const Topbar = ({
@@ -8,8 +8,8 @@ const Topbar = ({
   styleFont,
   colorFont,
   logo,
-  buttonLeft: button,
-  button2,
+  buttonLeft,
+  buttonRight,
   icone,
   arrowLeft,
 }: TopbarProps) => {
@@ -50,8 +50,8 @@ const Topbar = ({
         </Text>
       </HStack>
       <HStack>
-        {button}
-        {button2}
+        {buttonLeft}
+        {buttonRight}
         {icone}
       </HStack>
     </HStack>

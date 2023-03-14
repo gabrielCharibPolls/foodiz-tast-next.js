@@ -1,7 +1,7 @@
 import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
 import Flechegauche from "@/ui/icons/leftArrow";
-
+import Arrow from "@/ui/icons/arrowN";
 import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
 import SaveIcon from "@/ui/icons/save";
 
@@ -24,7 +24,7 @@ const Topbar = () => {
           align='center'
           justify='center'
         >
-          <Flechegauche />
+          <Arrow left={false} />
         </HStack>
 
         <Text size='16px' fontFamily='inter' align='center' fontWeight='bold'>
