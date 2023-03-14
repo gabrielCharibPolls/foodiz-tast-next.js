@@ -18,10 +18,15 @@ const ButtonTextIcone = ({
   variant,
   width,
   height,
-  colorButton,
+  color,
+  ...props
+
+   
 }: ButtonTextIconeProps) => {
   return (
     <Button
+    
+    { ...props }
       flexDirection='row'
       alignItems='center'
       padding={padding || "12px"}
@@ -30,8 +35,11 @@ const ButtonTextIcone = ({
       background={bg || "#F46363"}
       borderRadius={borderRadius || "4px"}
       border={border}
-      color={colorButton}
+      color={color}
       variant={variant || "solid"}
+
+
+      
     >
       {startEnhancer && (
         <HStack pb='2px' pl='12px' pr='0px'>
@@ -52,6 +60,7 @@ const ButtonTextIcone = ({
       </Text>
       {endEnhancer && <Flex pr='12px'>{endEnhancer}</Flex>}
     </Button>
+
   );
 };
 
