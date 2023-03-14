@@ -3,16 +3,12 @@ import { Text, HStack, Flex } from "@chakra-ui/react";
 import { TopbarProps } from "./props";
 
 const Topbar = ({
-  ////////////////////////////////////////////////////////////////
-  ///utiliser startEnhancer  endEnhancer
-  ////////////////////////////////////////////////////////////////
   startEnhancer,
-  endEnhancer,
   text,
   styleFont,
   colorFont,
   logo,
-  button,
+  buttonLeft: button,
   button2,
   icone,
   arrowLeft,

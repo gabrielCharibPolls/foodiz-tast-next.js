@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode } from "react";
+import { ReactElement } from "react";
 
 export type TopbarProps = {
   startEnhancer?: ReactElement;
@@ -7,8 +7,8 @@ export type TopbarProps = {
   styleFont?: string;
   colorFont?: string;
   logo?: ReactElement;
-  button?: ReactElement;
-  button2?: ReactElement;
+  buttonLeft?: ReactElement;
+  buttonRight?: ReactElement;
   icone?: ReactElement;
   arrowLeft?: ReactElement;
 };
