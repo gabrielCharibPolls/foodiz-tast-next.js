@@ -2,10 +2,6 @@ import { useState } from "react";
 import {
   Icon,
   Input,
-  InputGroup,
-  InputLeftElement,
-  Box,
-  Flex,
   HStack,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";

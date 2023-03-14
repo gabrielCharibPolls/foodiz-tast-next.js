@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import Page from "@/ui/page";
+import { Html, Head,NextScript } from "next/document";
+
 
 export default function Document() {
   return (
