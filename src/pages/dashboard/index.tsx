@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, VStack } from "@chakra-ui/react";
 import Tab from "@/ui/top/index";
-import HeadBoutton from "@/ui/topbar/topbarBasic";
 import Page from "@/ui/page";
 
 import Topbar from "@/ui/topbar";
@@ -14,7 +13,17 @@ import AddLogo from "@/ui/icons/addLogo";
 import Carte from "@/ui/cartd";
 
 export default function Dashboard() {
-  const userList: any[] = [
+  ////////////////////////////////////////////////////////////////////////////////
+  //block 1 : variables
+  ////////////////////////////////////////////////////////////////////////////////
+
+  interface User {
+    name: string;
+    mail: string;
+    role: string;
+  }
+
+  const userList: User[] = [
     {
       name: "Stéphane De Groot",
       mail: "stephane.de.groot@foodiz.com",
@@ -116,6 +125,9 @@ export default function Dashboard() {
       role: "user",
     },
   ];
+  ////////////////////////////////////////////////////////////////////////////////
+  //block 2 : the return
+  ////////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
@@ -148,8 +160,13 @@ export default function Dashboard() {
             justifyContent='space-between'
             borderRadius='8px'
           >
-            {userList.map((user) => (
-              <Carte name={user.name} mail={user.mail} role={user.role} />
+            {userList.map((user, index) => (
+              <Carte
+                key={index}
+                name={user.name}
+                mail={user.mail}
+                role={user.role}
+              />
             ))}
           </VStack>
         </Box>
