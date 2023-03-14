@@ -4,7 +4,7 @@ import Topbar from "@/ui/top-bar/newUser";
 import UserInformationForms from "@/ui/forms/user-information";
 import UserType from "@/ui/forms/user-type";
 import InvitationMail from "@/ui/forms/invitation-mail";
-import SideMenu from "@/ui/menu/sideMenu";
+import SideMenu from "@/ui/menu/side-menu";
 import Page from "@/ui/page";
 
 export default function AddUser() {
