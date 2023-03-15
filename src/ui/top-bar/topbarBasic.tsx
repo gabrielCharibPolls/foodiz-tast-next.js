@@ -1,19 +1,16 @@
 import React from "react";
-import Fleche from "../icons/loupe";
-import { Text, Flex, HStack } from "@chakra-ui/react";
+import { Text, HStack } from "@chakra-ui/react";
 import Flechegauche from "../icons/leftArrow";
-import ButtonDeleteCompanie from "../icons/buttonDeleteCompany";
-import ButtonAdd from "../icons/buttonAddUser";
-import DeleteButton from "../buttons/deleteButton";
-import AddLogo from "../icons/addLogo";
 import Logo from "../icons/logo";
+import ButtonTextIcone from "@/ui/buttons/button-text-icone";
+import Trash from "../icons/trash";
+import AddLogo from "../icons/addLogo";
 
-type Props = {};
+////////////////////////////////////////////////////////////////////////////////
+//suprimer ce compsoant quand le commposnat generique est 100 fonctionnnel
+//////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////
-//changer le const
-////////////////////////
-const HeadButton: React.FC<Props> = ({}) => {
+const HeadButton = () => {
   return (
     <HStack justifyContent={"space-between"} py='11px'>
       <HStack
@@ -40,13 +37,16 @@ const HeadButton: React.FC<Props> = ({}) => {
           Nightborn
         </Text>
       </HStack>
-      //////////////////////////////////////////////////////////// /////demander
-      l'aide pour les positions des buttons
-      ////////////////////////////////////////////////////////////
-      <HStack flexDirection={"row-reverse"}>
-        {/* <ButtonAdd /> */}
-        <DeleteButton />
-        <ButtonAdd />
+      <HStack>
+        <ButtonTextIcone
+          text='Delete company'
+          startEnhancer={<Trash></Trash>}
+        />
+        <ButtonTextIcone
+          text='Add new user'
+          startEnhancer={<AddLogo></AddLogo>}
+          bg='#00504E'
+        />
       </HStack>
     </HStack>
   );

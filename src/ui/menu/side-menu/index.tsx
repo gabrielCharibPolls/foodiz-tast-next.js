@@ -1,9 +1,8 @@
 import React from "react";
 
-import { Text, Flex, HStack, VStack } from "@chakra-ui/react";
-import { None } from "framer-motion";
+import { Text, HStack, VStack } from "@chakra-ui/react";
 
-const SideMenu: React.FC<None> = ({}) => {
+const SideMenu = () => {
   return (
     <VStack
       p='10px 12px 10px 20px'
@@ -18,7 +17,6 @@ const SideMenu: React.FC<None> = ({}) => {
       gap='8px'
       left='212px'
       padding='20px'
-      // position='absolute'
       top='80px'
       w='100%'
     >

@@ -1,14 +1,27 @@
 import React from "react";
-import { Box, VStack } from "@chakra-ui/react";
-import TopInfo from "@/ui/top/index";
-import HeadBoutton from "@/ui/topbar/topbarBasic";
+import { Box, HStack, VStack } from "@chakra-ui/react";
+import Tab from "@/ui/top/index";
 import Page from "@/ui/page";
-import Top from "@/ui/top";
-
+import Topbar from "@/ui/top-bar";
+import Logo from "@/ui/icons/logo";
+import Arrow from "@/ui/icons/arrow";
+import ButtonTextIcone from "@/ui/buttons/button-text-icone";
+import Trash from "@/ui/icons/trash";
+import AddLogo from "@/ui/icons/addLogo";
 import Carte from "@/ui/cartd";
 
 export default function Dashboard() {
-  const userList: any[] = [
+  ////////////////////////////////////////////////////////////////////////////////
+  //block 1 : variables
+  ////////////////////////////////////////////////////////////////////////////////
+
+  interface User {
+    name: string;
+    mail: string;
+    role: string;
+  }
+
+  const userList: User[] = [
     {
       name: "Stéphane De Groot",
       mail: "stephane.de.groot@foodiz.com",
@@ -110,14 +123,34 @@ export default function Dashboard() {
       role: "user",
     },
   ];
+  ////////////////////////////////////////////////////////////////////////////////
+  //block 2 : the return
+  ////////////////////////////////////////////////////////////////////////////////
 
   return (
     <>
-      <Page bg='#FFFFF'>
-        <HeadBoutton />
-        <TopInfo />
-        <Box bg='#E7E9F4' pb='280px'>
-          <Top />
+      <Page bg='#00000'>
+        <Topbar
+          startEnhancer={<Arrow direction='left' />}
+          logo={<Logo />}
+          text='Nightborn'
+          endEnhancer={
+            <HStack>
+              <ButtonTextIcone
+                text='Delete company'
+                startEnhancer={<Trash />}
+              />
+              <ButtonTextIcone
+                text='Add new user'
+                startEnhancer={<AddLogo />}
+                bg='#00504E'
+              />
+            </HStack>
+          }
+        ></Topbar>
+
+        <Tab />
+        <Box bg='#E7E9F4'>
           <VStack
             marginRight='32px'
             marginLeft='32px'
@@ -125,8 +158,13 @@ export default function Dashboard() {
             justifyContent='space-between'
             borderRadius='8px'
           >
-            {userList.map((user) => (
-              <Carte name={user.name} mail={user.mail} role={user.role} />
+            {userList.map((user, index) => (
+              <Carte
+                key={index}
+                name={user.name}
+                mail={user.mail}
+                role={user.role}
+              />
             ))}
           </VStack>
         </Box>
