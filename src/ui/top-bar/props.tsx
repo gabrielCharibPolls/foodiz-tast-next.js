@@ -1,14 +1,16 @@
+import { ChakraProps } from "@chakra-ui/react";
 import { ReactElement } from "react";
 
-export type TopbarProps = {
+export interface TopbarProps extends ChakraProps {
+  //ça remplace  bouttonRight / buttonleft
   startEnhancer?: ReactElement;
-  endEnhancer?: string;
+  endEnhancer?: ReactElement;
   text?: string;
   styleFont?: string;
   colorFont?: string;
   logo?: ReactElement;
-  buttonLeft?: ReactElement;
-  buttonRight?: ReactElement;
+  // buttonLeft?: ReactElement;
+  // buttonRight?: ReactElement;
   icone?: ReactElement;
   arrowLeft?: ReactElement;
-};
+}

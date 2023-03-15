@@ -136,15 +136,18 @@ export default function Dashboard() {
           startEnhancer={<LeftArrow />}
           logo={<Logo />}
           text='Nightborn'
-          buttonLeft={
-            <ButtonTextIcone text='Delete company' startEnhancer={<Trash />} />
-          }
-          buttonRight={
-            <ButtonTextIcone
-              text='Add new user'
-              startEnhancer={<AddLogo />}
-              bg='#00504E'
-            />
+          endEnhancer={
+            <Box>
+              <ButtonTextIcone
+                text='Delete company'
+                startEnhancer={<Trash />}
+              />
+              <ButtonTextIcone
+                text='Add new user'
+                startEnhancer={<AddLogo />}
+                bg='#00504E'
+              />
+            </Box>
           }
         ></Topbar>
 

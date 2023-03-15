@@ -8,13 +8,13 @@ const Topbar = ({
   styleFont,
   colorFont,
   logo,
-  buttonLeft,
-  buttonRight,
+  endEnhancer,
   icone,
   arrowLeft,
+  ...props
 }: TopbarProps) => {
   return (
-    <HStack justifyContent={"space-between"} py='11px'>
+    <HStack justifyContent={"space-between"} py='11px' {...props}>
       <HStack
         p='12px'
         py='18.5'
@@ -50,8 +50,7 @@ const Topbar = ({
         </Text>
       </HStack>
       <HStack>
-        {buttonLeft}
-        {buttonRight}
+        {endEnhancer}
         {icone}
       </HStack>
     </HStack>
