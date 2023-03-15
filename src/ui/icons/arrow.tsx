@@ -1,6 +1,12 @@
 import React from "react";
 
-const Fleche = () => {
+interface ArrowProps {
+  direction: "left" | "right";
+}
+
+const Arrow = ({ direction }: ArrowProps) => {
+  const isLeft = direction === "right";
+  const transformValue = isLeft ? "-180deg" : "180deg";
   return (
     <svg
       width='18'
@@ -8,22 +14,28 @@ const Fleche = () => {
       viewBox='0 0 18 18'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      style={{ transform: `rotate(${transformValue})` }}
     >
       <path
-        d='M4.15096 9L13.8489 9'
-        stroke='#006462'
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        d={isLeft ? "M4.15103 9H13.8489" : "M13.8489 9H4.15103"}
+        stroke='#393360'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
       <path
-        d='M8.99992 4.15102L13.8489 8.99998L8.99992 13.8489'
-        stroke='#006462'
-        stroke-width='2'
-        stroke-linecap='round'
-        stroke-linejoin='round'
+        d={
+          isLeft
+            ? "M8.99999 4.15106L4.15103 9.00002L8.99999 13.849"
+            : "M8.99999 13.849L13.8489 9.00002L8.99999 4.15106"
+        }
+        stroke='#393360'
+        strokeWidth='2'
+        strokeLinecap='round'
+        strokeLinejoin='round'
       />
     </svg>
   );
 };
-export default Fleche;
+
+export default Arrow;

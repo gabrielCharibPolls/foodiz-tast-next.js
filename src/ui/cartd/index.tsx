@@ -1,5 +1,5 @@
 import React from "react";
-import Fleche from "../icons/arrow";
+import Arrow from "../icons/arrow";
 import { Text, Flex, HStack } from "@chakra-ui/react";
 import { CarteProps } from "./props";
 
@@ -39,7 +39,7 @@ const Carte: React.FC<CarteProps> = ({ name, mail, role, onClick }) => {
         justify='center'
         onClick={onClick}
       >
-        <Fleche />
+        <Arrow direction='right' />
       </Flex>
     </HStack>
   );

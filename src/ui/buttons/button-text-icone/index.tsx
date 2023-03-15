@@ -2,7 +2,6 @@ import React from "react";
 import { Button, Flex, HStack, Text } from "@chakra-ui/react";
 import { ButtonTextIconeProps } from "./props";
 
-
 const ButtonTextIcone = ({
   text,
   textFont,
@@ -20,13 +19,10 @@ const ButtonTextIcone = ({
   height,
   color,
   ...props
-
-   
 }: ButtonTextIconeProps) => {
   return (
     <Button
-    
-    { ...props }
+      {...props}
       flexDirection='row'
       alignItems='center'
       padding={padding || "12px"}
@@ -37,9 +33,6 @@ const ButtonTextIcone = ({
       border={border}
       color={color}
       variant={variant || "solid"}
-
-
-      
     >
       {startEnhancer && (
         <HStack pb='2px' pl='12px' pr='0px'>
@@ -60,7 +53,6 @@ const ButtonTextIcone = ({
       </Text>
       {endEnhancer && <Flex pr='12px'>{endEnhancer}</Flex>}
     </Button>
-
   );
 };
 

@@ -2,15 +2,12 @@ import React from "react";
 import { Box, HStack, VStack } from "@chakra-ui/react";
 import Tab from "@/ui/top/index";
 import Page from "@/ui/page";
-
 import Topbar from "@/ui/top-bar";
 import Logo from "@/ui/icons/logo";
-import LeftArrow from "@/ui/icons/leftArrow";
-import Arrow from "@/ui/icons/arrowN";
+import Arrow from "@/ui/icons/arrow";
 import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import Trash from "@/ui/icons/trash";
 import AddLogo from "@/ui/icons/addLogo";
-
 import Carte from "@/ui/cartd";
 
 export default function Dashboard() {

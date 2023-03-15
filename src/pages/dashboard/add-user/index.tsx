@@ -1,12 +1,11 @@
 import React from "react";
 import { HStack, VStack } from "@chakra-ui/react";
-import TopbarOld from "@/ui/top-bar/newUser";
 import UserInformationForms from "@/ui/forms/user-information";
 import UserType from "@/ui/forms/user-type";
 import InvitationMail from "@/ui/forms/invitation-mail";
 import SideMenu from "@/ui/menu/side-menu";
 import Page from "@/ui/page";
-import Arrow from "@/ui/icons/arrowN";
+import Arrow from "@/ui/icons/arrow";
 import Topbar from "@/ui/top-bar";
 import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import SaveIcon from "@/ui/icons/save";
@@ -25,7 +24,7 @@ export default function AddUser() {
             align='center'
             justify='center'
           >
-            <Arrow direction='right' />
+            <Arrow direction='left' />
           </HStack>
         }
         text='Add new user'

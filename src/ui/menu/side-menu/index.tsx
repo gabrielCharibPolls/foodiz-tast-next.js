@@ -17,7 +17,6 @@ const SideMenu = () => {
       gap='8px'
       left='212px'
       padding='20px'
-      // position='absolute'
       top='80px'
       w='100%'
     >
