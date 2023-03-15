@@ -64,7 +64,7 @@ const UserInformationForms = () => {
       </CardHeader>
 
       <HStack pl='20px' pr='20px'>
-        <FormControl id='firstName' isRequired pr='20px'>
+        <FormControl id='firstName' pr='20px'>
           <FormLabel
             fontFamily='Inter'
             fontStyle='normal'
@@ -72,10 +72,12 @@ const UserInformationForms = () => {
             fontSize='12px'
             display='flex'
             color='#8F95B2'
+            lineHeight={"15px"}
           >
             FIRST NAME
           </FormLabel>
           <Input
+            placeholder='Insert a frist name'
             type='text'
             name='firstName'
             value={formik.values.firstName}
@@ -87,7 +89,7 @@ const UserInformationForms = () => {
           />
         </FormControl>
 
-        <FormControl id='lastName' isRequired>
+        <FormControl id='lastName'>
           <FormLabel
             fontFamily='Inter'
             fontStyle='normal'
@@ -98,6 +100,7 @@ const UserInformationForms = () => {
             LAST NAME
           </FormLabel>
           <Input
+            placeholder='Insert a last name'
             type='text'
             name='lastName'
             value={formik.values.lastName}
@@ -118,10 +121,12 @@ const UserInformationForms = () => {
             fontSize='12px'
             display='flex'
             color='#8F95B2'
+            lineHeight={"14.52px"}
           >
             EMAIL ADDRESS
           </FormLabel>
           <Input
+            placeholder='Insert an email adress'
             type='email'
             name='email'
             value={formik.values.email}
@@ -142,6 +147,7 @@ const UserInformationForms = () => {
             PHONE (optionnal)
           </FormLabel>
           <Input
+            placeholder='Insert a phone number '
             type='tel'
             name='phone'
             value={formik.values.phone}
