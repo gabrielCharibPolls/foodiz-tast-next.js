@@ -23,7 +23,7 @@ const Topbar = () => {
           align='center'
           justify='center'
         >
-          <Arrow left={false} />
+          <Arrow direction='right' />
         </HStack>
 
         <Text size='16px' fontFamily='inter' align='center' fontWeight='bold'>
@@ -40,7 +40,7 @@ const Topbar = () => {
           marginLeftLeftIcon='12px'
           bg='#00504E'
           text='Save & Add'
-          startEnhancer={<SaveIcon/>}
+          startEnhancer={<SaveIcon />}
         />
       </HStack>
     </HStack>

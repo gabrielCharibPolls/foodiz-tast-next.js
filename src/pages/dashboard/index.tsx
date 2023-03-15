@@ -1,11 +1,12 @@
 import React from "react";
-import { Box, VStack } from "@chakra-ui/react";
+import { Box, HStack, VStack } from "@chakra-ui/react";
 import Tab from "@/ui/top/index";
 import Page from "@/ui/page";
 
 import Topbar from "@/ui/top-bar";
 import Logo from "@/ui/icons/logo";
 import LeftArrow from "@/ui/icons/leftArrow";
+import Arrow from "@/ui/icons/arrowN";
 import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import Trash from "@/ui/icons/trash";
 import AddLogo from "@/ui/icons/addLogo";
@@ -133,11 +134,11 @@ export default function Dashboard() {
     <>
       <Page bg='#00000'>
         <Topbar
-          startEnhancer={<LeftArrow />}
+          startEnhancer={<Arrow direction='left' />}
           logo={<Logo />}
           text='Nightborn'
           endEnhancer={
-            <Box>
+            <HStack>
               <ButtonTextIcone
                 text='Delete company'
                 startEnhancer={<Trash />}
@@ -147,7 +148,7 @@ export default function Dashboard() {
                 startEnhancer={<AddLogo />}
                 bg='#00504E'
               />
-            </Box>
+            </HStack>
           }
         ></Topbar>
 

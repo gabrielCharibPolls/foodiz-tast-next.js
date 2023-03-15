@@ -6,6 +6,10 @@ import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import Trash from "../icons/trash";
 import AddLogo from "../icons/addLogo";
 
+////////////////////////////////////////////////////////////////////////////////
+//suprimer ce compsoant quand le commposnat generique est 100 fonctionnnel
+//////////////////////////////////////////////////////////////////////////////
+
 const HeadButton = () => {
   return (
     <HStack justifyContent={"space-between"} py='11px'>
