@@ -41,22 +41,21 @@ const UserInformationForms = () => {
         fontStyle='normal'
         fontSize='15px'
         color='#8F95B2'
+        w='760px'
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero,
         volutpat pharetra commodo nunc. Lacus malesuada fermentum, elit egestas
         lorem bibendum.
       </Text>
 
-      <FormControl id='userType' isRequired>
+      <FormControl id='userType' w='416px' pt='28px'>
         <FormLabel
           fontFamily='Inter'
           fontStyle='normal'
           fontSize='12px'
-          color='#8F95B2'
-        >
-          TYPE D'UTILISATEUR
-        </FormLabel>
+        ></FormLabel>
         <Select
+          color='#8F95B2'
           placeholder='Select a user type'
           name='userType'
           value={formik.values.userType}
