@@ -1,8 +1,7 @@
 import React from "react";
 import { Text, HStack } from "@chakra-ui/react";
-import Flechegauche from "@/ui/icons/leftArrow";
 import Arrow from "@/ui/icons/arrowN";
-import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
+import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import SaveIcon from "@/ui/icons/save";
 
 const Topbar = () => {
@@ -41,7 +40,7 @@ const Topbar = () => {
           marginLeftLeftIcon='12px'
           bg='#00504E'
           text='Save & Add'
-          startEnhancer=<SaveIcon></SaveIcon>
+          startEnhancer={<SaveIcon/>}
         />
       </HStack>
     </HStack>

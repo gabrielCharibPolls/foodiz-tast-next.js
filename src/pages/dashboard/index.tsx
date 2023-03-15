@@ -6,7 +6,7 @@ import Page from "@/ui/page";
 import Topbar from "@/ui/top-bar";
 import Logo from "@/ui/icons/logo";
 import LeftArrow from "@/ui/icons/leftArrow";
-import ButtonTextIcone from "@/ui/buttons/buttonTextIcone";
+import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import Trash from "@/ui/icons/trash";
 import AddLogo from "@/ui/icons/addLogo";
 
@@ -139,7 +139,7 @@ export default function Dashboard() {
           buttonLeft={
             <ButtonTextIcone text='Delete company' startEnhancer={<Trash />} />
           }
-          button2={
+          buttonRight={
             <ButtonTextIcone
               text='Add new user'
               startEnhancer={<AddLogo />}
