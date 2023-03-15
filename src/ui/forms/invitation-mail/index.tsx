@@ -44,17 +44,17 @@ const InvitationMailForm = () => {
         <Text
           fontFamily='Inter'
           fontStyle='normal'
-          fontWeight='400'
+          fontWeight='720px'
           fontSize='15px'
           color='#8F95B2'
-          pt='-45px'
+          lineHeight={"14.52px"}
         >
           You can send a invitation mail to the user. He will be redirected to
           his company’s application and asked to finalize his account by
           creating his password
         </Text>
 
-        <FormControl id='invitationSent' isRequired>
+        <FormControl id='invitationSent'>
           <FormLabel
             pt='-32px'
             fontFamily='Inter'
@@ -64,7 +64,7 @@ const InvitationMailForm = () => {
             display='flex'
             color='#8F95B2'
           >
-            <HStack>
+            <HStack paddingTop='21px'>
               <Checkbox
                 name='invitationSent'
                 isChecked={formik.values.invitationSent}
@@ -74,8 +74,23 @@ const InvitationMailForm = () => {
                   formik.touched.invitationSent &&
                   Boolean(formik.errors.invitationSent)
                 }
+                borderRadius='6px'
+                borderStyle=' 1.5px, solid'
               />
-              <FormLabel ml={2}>Send invitation mail</FormLabel>
+              <FormLabel ml={2}>
+                <Text
+                  height=' 17px'
+                  font-family='Inter'
+                  font-style='normal'
+                  font-weight='600'
+                  font-size='14px'
+                  line-height=' 17px'
+                  color='#393360'
+                  gap={"20px"}
+                >
+                  Send invitation mail
+                </Text>{" "}
+              </FormLabel>
             </HStack>
           </FormLabel>
         </FormControl>
