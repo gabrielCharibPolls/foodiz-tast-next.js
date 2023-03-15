@@ -14,7 +14,7 @@ const Topbar = ({
   ...props
 }: TopbarProps) => {
   return (
-    <HStack justifyContent={"space-between"} py='11px' {...props}>
+    <HStack justifyContent={"space-between"} py='11px' bg='white' {...props}>
       <HStack
         p='12px'
         py='18.5'
@@ -49,7 +49,7 @@ const Topbar = ({
           {text}
         </Text>
       </HStack>
-      <HStack>
+      <HStack paddingRight={"32px"}>
         {endEnhancer}
         {icone}
       </HStack>
