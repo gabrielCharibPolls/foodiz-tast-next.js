@@ -18,7 +18,16 @@ const AnimatedInput = () => {
         cursor='pointer'
       />
 
-      {isExpanded && <Input type='text' placeholder='Type to searche...' size='xs' />}
+      {isExpanded && (
+        <Input
+          type='text'
+          placeholder='Type to searche...'
+          size='xs'
+          
+          focusBorderColor='transparent'
+          _hover={{ bg: "transparent" }}
+        />
+      )}
     </HStack>
   );
 };
