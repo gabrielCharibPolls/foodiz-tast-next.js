@@ -1,9 +1,5 @@
 import { useState } from "react";
-import {
-  Icon,
-  Input,
-  HStack,
-} from "@chakra-ui/react";
+import { Icon, Input, HStack } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
 const AnimatedInput = () => {
@@ -22,7 +18,7 @@ const AnimatedInput = () => {
         cursor='pointer'
       />
 
-      {isExpanded && <Input type='text' placeholder='test...' size='xs' />}
+      {isExpanded && <Input type='text' placeholder='Type to searche...' size='xs' />}
     </HStack>
   );
 };

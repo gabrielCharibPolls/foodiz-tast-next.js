@@ -8,6 +8,7 @@ import Arrow from "@/ui/icons/arrow";
 import ButtonTextIcone from "@/ui/buttons/button-text-icone";
 import Trash from "@/ui/icons/trash";
 import AddLogo from "@/ui/icons/addLogo";
+import TabMenu from "@/ui/top-bar/newUser/top";
 import Carte from "@/ui/cartd";
 
 export default function Dashboard() {
@@ -150,6 +151,7 @@ export default function Dashboard() {
         ></Topbar>
 
         <Tab />
+        <TabMenu />
         <Box bg='#E7E9F4'>
           <VStack
             marginRight='32px'

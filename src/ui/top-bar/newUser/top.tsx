@@ -1,11 +1,11 @@
 import React from "react";
 
-import AnimatedInput from "../input";
+import AnimatedInput from "@/ui/input/index";
 import { Text, Flex, Button, Box, Spacer } from "@chakra-ui/react";
 
-const Top = () => {
+const Tab = () => {
   return (
-    <Box>
+    <Box bg='#E7E9F4'>
       <Flex px='32px' paddingTop='24.5px'>
         <Button
           border-radius='4px'
@@ -52,4 +52,4 @@ const Top = () => {
   );
 };
 
-export default Top;
+export default Tab;
