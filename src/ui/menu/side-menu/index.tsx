@@ -26,7 +26,8 @@ const SideMenu = () => {
         flexDirection='row'
         alignItems='center'
         padding='10px 12px '
-        width='305px'
+        maxWidth={"370px"}
+        minWidth='150px'
         height='35px'
         bg='#FBF8EE'
         mr='15px'

@@ -10,10 +10,7 @@ import {
   CardHeader,
   Heading,
 } from "@chakra-ui/react";
-
-import * as Yup from "yup";
-
-const phoneRegExp = /^(?:\+32|0)4([-\.\s]?[0-9]){8}$/;
+import validationSchema from "./validation";
 
 const UserInformationForms = () => {
   const formik = useFormik({
@@ -24,15 +21,7 @@ const UserInformationForms = () => {
       phone: "",
       userType: "",
     },
-    validationSchema: Yup.object({
-      firstName: Yup.string().required("Required"),
-      lastName: Yup.string().required("Required"),
-      email: Yup.string().email("Invalid email address").required("Required"),
-      phone: Yup.string()
-        .matches(phoneRegExp, "Invalid phone number")
-        .required("Required"),
-      userType: Yup.string().required("Required"),
-    }),
+    validationSchema: validationSchema,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
     },
@@ -157,11 +146,6 @@ const UserInformationForms = () => {
           />
         </FormControl>
       </HStack>
-      {/* <form onSubmit={formik.handleSubmit}>
-            <Button type='submit' mt={4} colorScheme='blue'>
-              Submit
-            </Button>
-          </form> */}
     </Card>
   );
 };
